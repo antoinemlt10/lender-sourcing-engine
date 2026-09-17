@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Tonik Digital Bank Inc.",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "Philippines",
+    "notes": "Digital bank; certificate of authority reported Q1 2022 (PNA). Starter row: replace with the BSP directory entry.",
+    "profile": "prospect",
+    "registry": {
+      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
+      "regulator": "BSP",
+      "url": "https://alpha.pna.gov.ph/articles/1182068",
+      "as_of": "2022-08-24",
+      "registry_id": ""
+    }
+  },
+  {
+    "name": "Maya Bank Inc.",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "Philippines",
+    "notes": "Digital bank; certificate of authority reported Q1 2022 (PNA). Starter row: replace with the BSP directory entry.",
+    "profile": "prospect",
+    "registry": {
+      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
+      "regulator": "BSP",
+      "url": "https://alpha.pna.gov.ph/articles/1182068",
+      "as_of": "2022-08-24",
+      "registry_id": ""
+    }
+  },
+  {
+    "name": "Overseas Filipino Bank Inc.",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "Philippines",
+    "notes": "Digital bank subsidiary of Land Bank of the Philippines; certificate reported Q2 2022 (PNA). Starter row: replace with the BSP directory entry.",
+    "profile": "prospect",
+    "registry": {
+      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
+      "regulator": "BSP",
+      "url": "https://alpha.pna.gov.ph/articles/1182068",
+      "as_of": "2022-08-24",
+      "registry_id": ""
+    }
+  },
+  {
+    "name": "UNObank Inc.",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "Philippines",
+    "notes": "Digital bank; certificate reported Q2 2022 (PNA). Starter row: replace with the BSP directory entry.",
+    "profile": "prospect",
+    "registry": {
+      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
+      "regulator": "BSP",
+      "url": "https://alpha.pna.gov.ph/articles/1182068",
+      "as_of": "2022-08-24",
+      "registry_id": ""
+    }
+  },
+  {
+    "name": "UnionDigital Bank Inc.",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "Philippines",
+    "notes": "Digital bank; certificate reported 12 July 2022 (PNA). Starter row: replace with the BSP directory entry.",
+    "profile": "prospect",
+    "registry": {
+      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
+      "regulator": "BSP",
+      "url": "https://alpha.pna.gov.ph/articles/1182068",
+      "as_of": "2022-08-24",
+      "registry_id": ""
+    }
+  },
+  {
+    "name": "GoTyme Bank Corporation",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "Philippines",
+    "notes": "Digital bank; certificate reported 29 July 2022 (PNA). Starter row: replace with the BSP directory entry.",
+    "profile": "prospect",
+    "registry": {
+      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
+      "regulator": "BSP",
+      "url": "https://alpha.pna.gov.ph/articles/1182068",
+      "as_of": "2022-08-24",
+      "registry_id": ""
+    }
+  }
+]

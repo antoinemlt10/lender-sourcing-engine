@@ -1,0 +1,42 @@
+{
+  "name": "Kita ICP v0, Philippines (hypothesis)",
+  "vendor": {
+    "name": "Kita",
+    "description": "Kita (San Francisco, YC W26) sells AI-native credit underwriting to lenders. Public positioning: 'turn messy borrower documents into the data layer that powers lending in emerging and undertapped domestic markets' (YC launch, 23 January 2026) and underwriting decisions in under 60 seconds for borrowers that credit bureaus miss (Menlo Times, 19 August 2026). Products named on its site: Intelligent LOS, AI-Powered Application, AI Credit Officer, AI Underwriter, Kita Capture, Document Risk Score. Reported live with lenders in the Philippines, Indonesia, Mexico and the United States, with more than $130M of loan volume processed (press, August 2026). Everything else about Kita's ideal customer in this file is the config author's hypothesis."
+  },
+  "wedge": "HYPOTHESIS, NOT A DESCRIPTION OF KITA'S PIPELINE. Kita is already live with lenders in the Philippines, so the question is which other Philippine lenders it should talk to next. The bet encoded here: the best accounts are regulated Philippine lenders whose book is thin-file credit underwritten from documents rather than from bureau history: MSME and consumer loans decided on bank statements, IDs, payslips, business permits and photos, with a visible manual step (multi-day turnaround, branch-based application, long 'requirements' lists). Three entity types are in scope: BSP-licensed banks (digital banks, thrift banks, larger rural banks), SEC-licensed financing companies and lending companies (RA 8556 and RA 9474), and the subset of them that operate a registered online lending platform. Deprioritized: universal banks with mature bureau-based and collateral-based books and long procurement; e-wallet or superapp lenders whose credit decisions run on their own behavioural data; pawnshops and remittance-only businesses; any entity whose SEC certificate is revoked or suspended or that is on an SEC advisory. Incumbents to check: the list in this file is EMPTY on purpose; the config author does not know which loan origination or decisioning vendors are installed in Philippine lenders. Kita's team should fill it in; until then, incumbent evidence is whatever the web enrichment finds, flagged sourced or inferred. Search terms that help: 'loan requirements', 'apply online', 'SME loan', 'salary loan', 'microfinance', 'digital bank', 'thrift bank', 'financing company', 'online lending platform', 'BSP', 'SEC', 'certificate of authority', 'core banking', 'loan origination system'.",
+  "factor_rubrics": {
+    "acuity": "Intensity of document-heavy, manual underwriting of thin-file borrowers, which is the pain Kita's product removes. ~1.0: a lender whose core book is unsecured MSME or consumer credit to borrowers with little or no bureau history, underwritten from documents (bank statements, IDs, payslips, permits, photos), with public evidence of a manual step: turnaround in days, branch or agent-based application, long requirements lists. ~0.7: mixed book, part document-based. ~0.3: collateralized or corporate lending decided on audited financials and bureau data, or a lender that already automates decisions on its own transaction data (e-wallet, superapp, payroll platform). 0 only if the entity does not originate credit at all (pawnshop, remittance, pure servicer). Cite what the lender says about its own application process.",
+    "roi_quant": "How directly faster and better underwriting converts to money for this lender. ~1.0: high-volume, small-ticket origination where days-to-decision, drop-off and document fraud are measurable costs; public volume, loan book or growth figures exist. ~0.6: mid-volume lender with some published figures. ~0.3: low-volume or single-branch operation, or no public sense of scale. Score what the lender's own CFO could verify in a quarter; never invent loan-book or NPL figures.",
+    "whitespace": "How free the account is of an installed loan origination system, decisioning engine or document-AI vendor that would compete with or block Kita. ~0.9-1.0: no vendor visible; the application flow looks homegrown or paper-based. ~0.5-0.7: a core banking vendor is visible but nothing on origination or decisioning. ~0.1-0.2: a named vendor case study or press release shows an installed LOS or decisioning engine, or the lender markets its own in-house AI underwriting as a differentiator (it already built what Kita sells). The incumbents list in this config is empty; cite any vendor relationship you find.",
+    "closeability": "Structural gate on whether Kita can lawfully and practically sell to this lender in the Philippines. ~1.0: Philippine-regulated entity with an active licence or certificate (BSP for banks, SEC certificate of authority for financing and lending companies), operations in the Philippines, no public enforcement action. ~0.6: licence status unclear from public data, or a foreign group's local subsidiary whose technology decisions may sit abroad. ~0.1: SEC certificate revoked or suspended, cease-and-desist order, or presence on an SEC advisory list; a bank under receivership or closure. The register row this seed came from is evidence for this factor; check the SEC revoked and suspended list too.",
+    "winnability": "Odds a seed-stage vendor can close this lender in months, not years. High: digital bank, mid-size thrift or rural bank, or a growing financing or lending company where a handful of executives decide and that already buys from technology vendors. Low: universal bank or conglomerate subsidiary with year-long procurement and in-house technology mandates, a lender in visible financial distress, or a family-run single-branch operation with no technology budget. Company size, ownership, procurement culture and financial health are the signals.",
+    "active_pain_timing": "Evidence the pain is acute now (past 12 months): a new digital bank licence or product launch, funding or capital raise, an announced MSME or consumer lending push, a partnership with a fintech or e-commerce platform that brings application volume, hiring for credit, underwriting, risk, fraud or data roles, a publicised fraud or document-forgery problem, or a regulatory deadline on digital onboarding. Recent, sourced signals score high; stale or absent signals score low.",
+    "reachability": "How credibly Kita can reach the right roles. Signals: executives who speak at Philippine fintech or banking events, membership of FinTech Alliance.PH, the Chamber of Thrift Banks or the Rural Bankers Association, shared investors with Kita's seed round (BoxGroup, Y Combinator, Golden Gate Ventures, BEENEXT, Kaya Founders, and the others named in the August 2026 press), Y Combinator alumni founders, published interviews. Role level only; never fabricate names or contact details."
+  },
+  "incumbents": {
+    "loan_origination_and_decisioning": [],
+    "document_ai_and_kyc": [],
+    "core_banking": []
+  },
+  "closeability_overrides": {},
+  "geo_tiers": {
+    "tiers": {
+      "philippines": 1.0,
+      "unknown": 0.5
+    },
+    "countries": {
+      "Philippines": "philippines",
+      "PH": "philippines"
+    }
+  },
+  "scoring": {
+    "weights": {
+      "winnability": 0.35,
+      "active_pain_timing": 0.35,
+      "reachability": 0.30
+    },
+    "structural_floor": 0.4
+  },
+  "seed_file": "../data/seed_lenders.json"
+}
