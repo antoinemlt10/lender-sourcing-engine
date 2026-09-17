@@ -5,6 +5,7 @@ from lender_engine.enrich import Enricher, PublicWebEnricher
 from lender_engine.models import Account
 from lender_engine.render import write_outputs
 from lender_engine.score import rank, score_account
+from lender_engine.source_quality import apply_source_quality
 from lender_engine.store import AccountStore
 
 
@@ -75,6 +76,7 @@ def run_pipeline(
             try:
                 account = enricher.enrich(seed, icp)
                 account = apply_closeability_override(account, icp)
+                apply_source_quality(account, icp)
                 account = score_account(account, icp.scoring)
                 store.upsert(account)
                 accounts.append(account)

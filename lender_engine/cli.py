@@ -116,6 +116,7 @@ def _cmd_rank(args: argparse.Namespace) -> int:
     from lender_engine.config import load_config
     from lender_engine.render import write_outputs
     from lender_engine.score import rank, score_account
+    from lender_engine.source_quality import apply_source_quality
     from lender_engine.store import AccountStore
 
     # Stored factors are the source of truth: re-scoring is free (no API
@@ -127,6 +128,9 @@ def _cmd_rank(args: argparse.Namespace) -> int:
         if not accounts:
             print(f"No accounts stored in {args.db}. Run `python -m lender_engine run` first.")
             return 1
+        reclassified = sum(apply_source_quality(account, icp) for account in accounts)
+        if reclassified:
+            print(f"Source quality: {reclassified} evidence item(s) reclassified to inferred.")
         accounts = rank([score_account(account, icp.scoring) for account in accounts])
         for account in accounts:
             store.upsert(account)

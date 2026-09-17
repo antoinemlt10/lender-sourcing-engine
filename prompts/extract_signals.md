@@ -76,7 +76,10 @@ check, in priority order:
   association or investor page. Do not cite mirror sites, content farms,
   unrelated domains that reproduce the lender's text, or loan-review
   aggregators as the only support for a sourced claim; if that is all you
-  find, mark the claim "inferred" and say why in the rationale.
+  find, mark the claim "inferred" and say why in the rationale. A map
+  listing, a Facebook page or a municipal business directory confirms only
+  that the lender exists and where it is; a claim about products, volume,
+  vendors, timing or reach that rests on one of them is "inferred".
 - Every evidence item needs a real source URL taken from your search
   results. Never invent or guess a URL.
 - Set confidence "sourced" ONLY when the cited URL directly supports the

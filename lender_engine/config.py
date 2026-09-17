@@ -51,6 +51,10 @@ class ICPConfig:
     # see (foreign/state ownership, offshore manufacturing):
     # {"<account name>": {"value": 0.15, "rationale": "...", "source_url": "..."}}
     closeability_overrides: dict = field(default_factory=dict)
+    # Source quality: {"existence_only_domains": ["waze.com", ...]}. Evidence
+    # citing one of these as its source is reclassified to inferred (see
+    # lender_engine.source_quality).
+    source_quality: dict = field(default_factory=dict)
 
 
 def apply_closeability_override(account: Account, icp: ICPConfig) -> Account:
@@ -154,6 +158,7 @@ def load_config(path: str | Path) -> ICPConfig:
         seed_file=str(seed_file),
         geo_tiers=raw.get("geo_tiers", {}),
         closeability_overrides=raw.get("closeability_overrides", {}),
+        source_quality=raw.get("source_quality", {}),
     )
 
 

@@ -140,6 +140,7 @@ class PublicWebEnricher(Enricher):
                 "extracted_json": json.dumps(data, indent=2),
             },
             max_tokens=1024,
+            label=seed.name,
         )
         if not poc_angle.strip():
             raise EnrichmentError(f"POC angle came back empty for {seed.name}")
@@ -176,5 +177,6 @@ class PublicWebEnricher(Enricher):
             },
             web_search=True,
             max_tokens=8192,
+            label=seed.name,
         )
         return parse_json_response(raw)

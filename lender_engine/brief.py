@@ -28,4 +28,5 @@ def build_brief(account: Account, icp: ICPConfig, client: ClaudeClient) -> str:
         variables,
         web_search=True,
         max_tokens=8192,
+        label=account.name,
     )

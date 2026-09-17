@@ -66,11 +66,14 @@ class ClaudeClient:
         variables: dict[str, str],
         web_search: bool = False,
         max_tokens: int = 4096,
+        label: str = "",
     ) -> str:
         """Render prompts/<prompt_name>.md with `variables` and run it.
 
         When web_search is True the server-side web search tool is attached
-        (max 8 searches). Returns the final text of the response.
+        (max 8 searches). Returns the final text of the response. `label`
+        (for example the account name) is written to the usage log next to
+        the search queries the model ran, so a run can be audited afterwards.
         """
         prompt = self._render_prompt(prompt_name, variables)
         messages: list[dict[str, Any]] = [{"role": "user", "content": prompt}]
@@ -84,6 +87,7 @@ class ClaudeClient:
         texts: list[str] = []
         final_response = None
         usage_events: list[Any] = []
+        queries: list[str] = []
         for _ in range(MAX_CONTINUATIONS + 1):
             response = self._client.messages.create(
                 model=self.model,
@@ -92,6 +96,13 @@ class ClaudeClient:
                 **kwargs,
             )
             usage_events.append(response.usage)
+            # The server-side search tool reports each query it ran as a
+            # server_tool_use block; keep them so the log says what was searched.
+            for block in response.content:
+                if getattr(block, "type", "") == "server_tool_use":
+                    query = (getattr(block, "input", None) or {}).get("query")
+                    if query:
+                        queries.append(str(query))
             texts.extend(
                 block.text for block in response.content if block.type == "text"
             )
@@ -107,7 +118,7 @@ class ClaudeClient:
                 f"{MAX_CONTINUATIONS} resume(s); giving up."
             )
 
-        self._record_usage(prompt_name, usage_events)
+        self._record_usage(prompt_name, usage_events, label=label, queries=queries)
 
         if final_response.stop_reason == "max_tokens":
             print(
@@ -117,10 +128,15 @@ class ClaudeClient:
 
         return "".join(texts).strip()
 
-    def _record_usage(self, prompt_name: str, usages: list[Any]) -> None:
+    def _record_usage(
+        self, prompt_name: str, usages: list[Any], label: str = "", queries: list[str] | None = None
+    ) -> None:
         """Sum the usage of one prompt (over its continuations), print and log it."""
-        row = {"ts": time.strftime("%Y-%m-%dT%H:%M:%S"), "model": self.model, "prompt": prompt_name,
-               "input_tokens": 0, "output_tokens": 0, "cache_read_input_tokens": 0, "web_search_requests": 0}
+        row: dict[str, Any] = {
+            "ts": time.strftime("%Y-%m-%dT%H:%M:%S"), "model": self.model, "prompt": prompt_name,
+            "label": label, "input_tokens": 0, "output_tokens": 0, "cache_read_input_tokens": 0,
+            "web_search_requests": 0, "queries": queries or [],
+        }
         for u in usages:
             row["input_tokens"] += getattr(u, "input_tokens", 0) or 0
             row["output_tokens"] += getattr(u, "output_tokens", 0) or 0
