@@ -23,9 +23,14 @@ $account_json
 
 Use web search sparingly to refresh or confirm the signals above; cite every
 new fact with its URL. Keep the same honesty rules as the enrichment: public
-data only, role-level personas, no individual's name anywhere (not even in
-a quote: write the role instead), no personal profile pages as sources, no
-invented numbers, sourced vs inferred stated explicitly.
+data only, no invented numbers, sourced vs inferred stated explicitly, and
+two hard rules. No individual's name anywhere in the brief, including inside
+quotes: refer to people by role ("the bank's president said", "a LANDBANK
+executive stated"). A cited URL must be the lender's own site, a regulator
+page, an official app store listing, a recognised news outlet, or an
+association or investor page; never a mirror site, content farm, unrelated
+domain reproducing the lender's text, or loan-review aggregator as the only
+support for a fact. If that is all you find, say the fact is inferred and why.
 
 Structure, in this order, each section short:
 
