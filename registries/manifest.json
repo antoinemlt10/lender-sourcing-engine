@@ -1,60 +1,62 @@
 {
-  "_readme": "One entry per public register. Download each list to registries/raw/ (git-ignored), fill 'file' and 'as_of' with the date printed on the list, then run: python -m lender_engine sources --inspect (to see what the parser reads) and python -m lender_engine sources (to build the pool). 'include': true puts the register's rows in the enrichment pool; false keeps them in registry_pool_full.csv only. Formats: pdf, xlsx, csv, or extract (a hand-made CSV with columns name,registry_id,hq,extra). URLs and dates below were last checked on 2026-09-17 and must be re-checked on the day the pool is built.",
+  "_readme": "One entry per public register. Download each list to registries/raw/ (git-ignored), fill 'file' and 'as_of' with the date printed on the list, then run: python -m lender_engine sources --inspect (to see what the parser reads) and python -m lender_engine sources (to build the pool). 'include': true puts the register's rows in the enrichment pool; false keeps them in registry_pool_full.csv only. BSP registers are downloaded with scripts/fetch_bsp_directory.py. Formats: pdf, xlsx, csv, or extract (a hand-made CSV with columns name,registry_id,hq,extra). URLs and dates below were last checked on 2026-09-17 and must be re-checked on the day the pool is built.",
   "registers": [
     {
-      "id": "starter_digital_banks",
-      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
-      "regulator": "BSP",
-      "url": "https://alpha.pna.gov.ph/articles/1182068",
-      "as_of": "2022-08-24",
-      "file": "extract/starter_digital_banks.csv",
-      "format": "extract",
-      "segment": "digital_bank",
-      "sub_segment": "",
-      "include": true,
-      "notes": "Press source, not the register. The BSP has since lifted its moratorium on digital bank licences, so this list is incomplete. Replace with the BSP directory (digital banks) and delete this entry."
-    },
-    {
       "id": "bsp_digital_banks",
-      "source": "BSP directory of banks: digital banks",
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: digital banks",
       "regulator": "BSP",
-      "url": "https://www.bsp.gov.ph",
-      "as_of": "",
-      "file": "raw/bsp_digital_banks.xlsx",
-      "format": "xlsx",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'14'&$top=500",
+      "as_of": "2026-09-14",
+      "file": "raw/bsp_digital_banks.csv",
+      "format": "csv",
       "segment": "digital_bank",
       "sub_segment": "",
       "include": true,
-      "columns": {"name": "bank", "hq": "address"},
-      "notes": "TO VERIFY: locate the current 'Directory of Banks and Non-Bank Financial Institutions' on bsp.gov.ph (the old path was /banking/directory.asp), download the digital banks sheet, record the as-of date printed on it. Map 'columns' to the actual headers after running --inspect."
+      "columns": {
+        "name": "bank",
+        "registry_id": "institutionid",
+        "hq": "address",
+        "extra": "website"
+      },
+      "notes": "Downloaded 2026-09-17 with scripts/fetch_bsp_directory.py from the REST feed behind the public page https://www.bsp.gov.ph/SitePages/FinancialStability/DirBanksFIList.aspx (SharePoint list 'Institutions', filtered on InstitutionTypeID 14; type codes from the 'Financial Institution' list). The page prints 'Updated as of' the newest Modified timestamp of the list in Manila time; the newest was 2026-09-14T08:15:29Z, so as_of is 2026-09-14. The feed also carries the name, e-mail, phone and fax of each institution's head; those fields are not requested by the script and are not in the raw file. The Status column (2 or empty) is not documented on the page and is not used. registry_id is the BSP InstitutionID, a row identifier in the directory, not a licence number. Seven rows: the six banks licensed in 2021-2022 plus Maribank Philippines, Inc."
     },
     {
       "id": "bsp_thrift_banks",
-      "source": "BSP directory of banks: thrift banks",
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
       "regulator": "BSP",
-      "url": "https://www.bsp.gov.ph",
-      "as_of": "",
-      "file": "raw/bsp_thrift_banks.xlsx",
-      "format": "xlsx",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "file": "raw/bsp_thrift_banks.csv",
+      "format": "csv",
       "segment": "thrift_bank",
       "sub_segment": "",
       "include": true,
-      "columns": {"name": "bank", "hq": "address"},
-      "notes": "Same directory as above, thrift banks sheet. Around 40 entities: all in the enrichment pool."
+      "columns": {
+        "name": "bank",
+        "registry_id": "institutionid",
+        "hq": "address",
+        "extra": "website"
+      },
+      "notes": "Downloaded 2026-09-17 with scripts/fetch_bsp_directory.py from the REST feed behind the public page https://www.bsp.gov.ph/SitePages/FinancialStability/DirBanksFIList.aspx (SharePoint list 'Institutions', filtered on InstitutionTypeID 10; type codes from the 'Financial Institution' list). The page prints 'Updated as of' the newest Modified timestamp of the list in Manila time; the newest was 2026-09-14T08:15:29Z, so as_of is 2026-09-14. The feed also carries the name, e-mail, phone and fax of each institution's head; those fields are not requested by the script and are not in the raw file. The Status column (2 or empty) is not documented on the page and is not used. registry_id is the BSP InstitutionID, a row identifier in the directory, not a licence number. All 42 rows go to the enrichment pool."
     },
     {
       "id": "bsp_rural_banks",
-      "source": "BSP directory of banks: rural and cooperative banks",
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: rural and cooperative banks",
       "regulator": "BSP",
-      "url": "https://www.bsp.gov.ph",
-      "as_of": "",
-      "file": "raw/bsp_rural_banks.xlsx",
-      "format": "xlsx",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'11'&$top=500",
+      "as_of": "2026-09-14",
+      "file": "raw/bsp_rural_banks.csv",
+      "format": "csv",
       "segment": "rural_bank",
       "sub_segment": "",
       "include": false,
-      "columns": {"name": "bank", "hq": "address"},
-      "notes": "Several hundred entities. Kept in the full pool, not enriched by default; to enrich a subset (for example the largest by assets, from BSP published statistics), build a hand-made extract of that subset and add it as a separate register with include=true."
+      "columns": {
+        "name": "bank",
+        "registry_id": "institutionid",
+        "hq": "address",
+        "extra": "website"
+      },
+      "notes": "Downloaded 2026-09-17 with scripts/fetch_bsp_directory.py from the REST feed behind the public page https://www.bsp.gov.ph/SitePages/FinancialStability/DirBanksFIList.aspx (SharePoint list 'Institutions', filtered on InstitutionTypeID 11; type codes from the 'Financial Institution' list). The page prints 'Updated as of' the newest Modified timestamp of the list in Manila time; the newest was 2026-09-14T08:15:29Z, so as_of is 2026-09-14. The feed also carries the name, e-mail, phone and fax of each institution's head; those fields are not requested by the script and are not in the raw file. The Status column (2 or empty) is not documented on the page and is not used. registry_id is the BSP InstitutionID, a row identifier in the directory, not a licence number. 366 rows (rural banks, InstitutionTypeID2 12, and cooperative banks, InstitutionTypeID2 13). Full pool only; to enrich a subset, build a hand-made extract of that subset and add it as a separate register with include=true."
     },
     {
       "id": "sec_online_lending_platforms",
@@ -67,7 +69,11 @@
       "segment": "lending_company",
       "sub_segment": "olp_registered",
       "include": true,
-      "columns": {"name": "company", "registry_id": "certificate", "extra": "platform"},
+      "columns": {
+        "name": "company",
+        "registry_id": "certificate",
+        "extra": "platform"
+      },
       "notes": "The list names the operating company and its platform(s). Record the as-of date printed on the PDF. These lenders already take applications online, so the document-based underwriting pain is the most visible here."
     },
     {
@@ -81,7 +87,10 @@
       "segment": "financing_company",
       "sub_segment": "",
       "include": false,
-      "columns": {"name": "name", "registry_id": "ca no"},
+      "columns": {
+        "name": "name",
+        "registry_id": "ca no"
+      },
       "notes": "Around 700 entities. Full pool only by default. The public versions of this list have carried different as-of dates; use the most recent one on sec.gov.ph and record its date. Kita's team is the right judge of which financing companies are worth enriching."
     },
     {
@@ -95,7 +104,10 @@
       "segment": "lending_company",
       "sub_segment": "",
       "include": false,
-      "columns": {"name": "name", "registry_id": "ca no"},
+      "columns": {
+        "name": "name",
+        "registry_id": "ca no"
+      },
       "notes": "Full pool only by default (thousands of small entities). The OLP list above is the enriched subset."
     },
     {
@@ -109,7 +121,9 @@
       "segment": "revoked_or_suspended",
       "sub_segment": "",
       "include": false,
-      "columns": {"name": "name"},
+      "columns": {
+        "name": "name"
+      },
       "notes": "Not a prospect list: a gate. Any name in the enrichment pool that also appears here should get closeability near 0.1 (see the closeability rubric). Cross-checking is done by the enrichment prompt from public data today; a hard join on this extract is a small next step."
     }
   ]

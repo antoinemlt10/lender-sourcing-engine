@@ -1,92 +1,737 @@
 [
   {
-    "name": "Tonik Digital Bank Inc.",
-    "segment": "digital_bank",
-    "sub_segment": "",
-    "hq": "Philippines",
-    "notes": "Digital bank; certificate of authority reported Q1 2022 (PNA). Starter row: replace with the BSP directory entry.",
-    "profile": "prospect",
-    "registry": {
-      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
-      "regulator": "BSP",
-      "url": "https://alpha.pna.gov.ph/articles/1182068",
-      "as_of": "2022-08-24",
-      "registry_id": ""
-    }
-  },
-  {
-    "name": "Maya Bank Inc.",
-    "segment": "digital_bank",
-    "sub_segment": "",
-    "hq": "Philippines",
-    "notes": "Digital bank; certificate of authority reported Q1 2022 (PNA). Starter row: replace with the BSP directory entry.",
-    "profile": "prospect",
-    "registry": {
-      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
-      "regulator": "BSP",
-      "url": "https://alpha.pna.gov.ph/articles/1182068",
-      "as_of": "2022-08-24",
-      "registry_id": ""
-    }
-  },
-  {
-    "name": "Overseas Filipino Bank Inc.",
-    "segment": "digital_bank",
-    "sub_segment": "",
-    "hq": "Philippines",
-    "notes": "Digital bank subsidiary of Land Bank of the Philippines; certificate reported Q2 2022 (PNA). Starter row: replace with the BSP directory entry.",
-    "profile": "prospect",
-    "registry": {
-      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
-      "regulator": "BSP",
-      "url": "https://alpha.pna.gov.ph/articles/1182068",
-      "as_of": "2022-08-24",
-      "registry_id": ""
-    }
-  },
-  {
-    "name": "UNObank Inc.",
-    "segment": "digital_bank",
-    "sub_segment": "",
-    "hq": "Philippines",
-    "notes": "Digital bank; certificate reported Q2 2022 (PNA). Starter row: replace with the BSP directory entry.",
-    "profile": "prospect",
-    "registry": {
-      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
-      "regulator": "BSP",
-      "url": "https://alpha.pna.gov.ph/articles/1182068",
-      "as_of": "2022-08-24",
-      "registry_id": ""
-    }
-  },
-  {
-    "name": "UnionDigital Bank Inc.",
-    "segment": "digital_bank",
-    "sub_segment": "",
-    "hq": "Philippines",
-    "notes": "Digital bank; certificate reported 12 July 2022 (PNA). Starter row: replace with the BSP directory entry.",
-    "profile": "prospect",
-    "registry": {
-      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
-      "regulator": "BSP",
-      "url": "https://alpha.pna.gov.ph/articles/1182068",
-      "as_of": "2022-08-24",
-      "registry_id": ""
-    }
-  },
-  {
     "name": "GoTyme Bank Corporation",
     "segment": "digital_bank",
     "sub_segment": "",
-    "hq": "Philippines",
-    "notes": "Digital bank; certificate reported 29 July 2022 (PNA). Starter row: replace with the BSP directory entry.",
+    "hq": "21st Floor, Units 3 and 4, work.able Giga Tower, Bridgetowne, 80 Eulogio Rodriguez Jr. Avenue, Brgy. Ugong Norte, Quezon City, Phillipines, 1110",
+    "notes": "",
     "profile": "prospect",
     "registry": {
-      "source": "Starter extract: the six BSP-licensed digital banks as reported by the Philippine News Agency (24 August 2022). Placeholder until the BSP directory row is used.",
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: digital banks",
       "regulator": "BSP",
-      "url": "https://alpha.pna.gov.ph/articles/1182068",
-      "as_of": "2022-08-24",
-      "registry_id": ""
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'14'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "465"
+    }
+  },
+  {
+    "name": "Maribank Philippines, Inc.",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "32 Rizal St., Poblacion 2, Pagsanjan, 4008 Laguna",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: digital banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'14'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "211"
+    }
+  },
+  {
+    "name": "Maya Bank, Inc.",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "6th Floor Launchpad Building, Reliance Corner Sheridan Streets, Mandaluyong City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: digital banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'14'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "462"
+    }
+  },
+  {
+    "name": "Overseas Filipino Bank, Inc., A Digital Bank of LANDBANK",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "Palacio del Gobernador Building, corner of Andres Soriano and General Luna Streets, Intramuros, Manila, Philippines",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: digital banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'14'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "460"
+    }
+  },
+  {
+    "name": "Tonik Digital Bank, Inc.",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "Unit 605B, 6/F West Wing, The Estancia Offices, Meralco Ave., 1605 Pasig City, Metro Manila",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: digital banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'14'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "461"
+    }
+  },
+  {
+    "name": "UnionDigital Bank, Inc.",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "41st Flr. UnionBank Plaza, Meralco Ave. cor. Onyx and Sapphire Roads, Bgy. San Antonio Ortigas Center, 1605 Pasig City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: digital banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'14'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "464"
+    }
+  },
+  {
+    "name": "UNObank, Inc.",
+    "segment": "digital_bank",
+    "sub_segment": "",
+    "hq": "Unit 2001, The Finance Centre, 26th Street corner 9th Avenue, Bonifacio Global City, Taguig City, Metro Manila 1634",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: digital banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'14'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "463"
+    }
+  },
+  {
+    "name": "1st Valley Bank, Inc. A Development Bank",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Vamenta Blvd., corner Lirio St., Carmen, 9000 Cagayan de Oro City",
+    "notes": "www.1stvalleybank.com",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "82"
+    }
+  },
+  {
+    "name": "AllBank (A Thrift Bank), Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "2/F AllBank Bldg., EDSA cor. Cornell St., Brgy. Wack-Wack, Mandaluyong City, Philippines",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "67"
+    }
+  },
+  {
+    "name": "Bangko Kabayan, Inc. (A Private Development Bank)",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Santiago St., Poblacion, Ibaan, Batangas",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "83"
+    }
+  },
+  {
+    "name": "Bank of Makati (A Savings Bank), Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Bank of Makati Building, Ayala Avenue near corner Metropolitan Avenue, Makati City",
+    "notes": "https://www.bankofmakati.com.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "84"
+    }
+  },
+  {
+    "name": "Bank One Savings Corporation",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "4201 Ramon Magsaysay Blvd., Sta. Mesa, Manila 1016",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "45"
+    }
+  },
+  {
+    "name": "Bataan Development Bank",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "3 Aguirre St., Poblacion, Balanga, 2100 Bataan",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "46"
+    }
+  },
+  {
+    "name": "BDO Network Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "ONB Center, Km. 9, Sasa, Davao City 8000",
+    "notes": "https://www.onenetworkbank.com.ph/",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "86"
+    }
+  },
+  {
+    "name": "BPI Direct BanKO, Inc., A Savings Bank",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "220 Ortigas Avenue, BanKO center North Greenhills, San Juan City 1503",
+    "notes": "http://www.bpi.com.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "47"
+    }
+  },
+  {
+    "name": "CARD SME Bank, Inc. A Thrift Bank",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "120 M. Paulino St. Corner Burgos st., San Pablo City, Laguna",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "48"
+    }
+  },
+  {
+    "name": "Century Savings Bank Corporation",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "232 Shaw Blvd. cor. Oranbo Drive, 1603 Pasig City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "49"
+    }
+  },
+  {
+    "name": "China Bank Savings, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "CBS Building, 314 Sen. Gil Puyat, 1226 Makati City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "50"
+    }
+  },
+  {
+    "name": "City Savings Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Ground 29th and 35th Floors UnionBank Plaza, Meralco Avenue, Corner Sapphire and Onyx Streets, Ortigas Center, Pasig City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "51"
+    }
+  },
+  {
+    "name": "Citystate Savings Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Citystate Center Building, 709 Shaw Blvd., Oranbo, 1600 Pasig City",
+    "notes": "http://www.citystatesavings.com/",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "52"
+    }
+  },
+  {
+    "name": "Cordillera Savings Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Dumlao Blvd., Salvacion, Bayombong, 3700 Nueva Vizcaya",
+    "notes": "http://www.cordillerasb.wordpress.com",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "53"
+    }
+  },
+  {
+    "name": "Dumaguete City Development Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Dr. Vicente Locsin cor. Cervantes Sts., Dumaguete City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "54"
+    }
+  },
+  {
+    "name": "Equicom Savings Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "6th Floor ODC International Plaza Building, 219 Salcedo Street, Legaspi Village, Makati City",
+    "notes": "https://www.equicomsavings.com",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "55"
+    }
+  },
+  {
+    "name": "First Consolidated Bank, Inc. (A Private Development Bank)",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "No. 0982 C.P. Garcia North Avenue, Taloto, Tagbilaran City",
+    "notes": "http://www.fcb.com.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "56"
+    }
+  },
+  {
+    "name": "Hiyas Banking Corporation (A Thrift Bank)",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Gov. Fortunato F. Halili Ave., Bagbaguin, Sta. Maria, Bulacan",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "57"
+    }
+  },
+  {
+    "name": "ISLA Bank (A Thrift Bank), Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "G/F & 2/F Glass Tower, 115 C. Palanca, Jr. St., Legaspi Village 1229 Makati City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "59"
+    }
+  },
+  {
+    "name": "Legazpi Savings Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "738 Building Rizal Street, Old Albay, Legazpi City",
+    "notes": "www.legazpisavings.com",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "60"
+    }
+  },
+  {
+    "name": "Lemery Savings and Loan Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "105 Ilustre Avenue, Lemery, Batangas",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "61"
+    }
+  },
+  {
+    "name": "Life Savings Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Units 13-14 Marieta Arcade, Marcos Highway corner A. Tuazon, Cainta, Rizal",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "62"
+    }
+  },
+  {
+    "name": "LOLC Bank Philippines Incorporated (A Thrift Bank)",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Lot 17 Blk 4 President Laurel Highway Poblacion IV Tanauan City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "58"
+    }
+  },
+  {
+    "name": "Luzon Development Bank",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "LDB Corporate Center, National Highway, Paciano Rizal, Calamba City, Laguna",
+    "notes": "www.ldb.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "63"
+    }
+  },
+  {
+    "name": "Makiling Development Bank Corporation",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Gate 1, YTMI Realty SEZ, Brgy. Makiling, Calamba City, 4027 Laguna",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "85"
+    }
+  },
+  {
+    "name": "Malayan Savings Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Majalco Bldg., cor. Benavidez & Trasierra Sts., Legaspi Village, Makati City 1229",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "64"
+    }
+  },
+  {
+    "name": "Northpoint Development Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "3rd Floor & 4th Floor S.P. Junction Bldg., National Highway Corner A. Mabini St., Brgy. Nueva, San Pedro City, Laguna",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "66"
+    }
+  },
+  {
+    "name": "Pacific Ace Savings Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Ground Floor, The Garden by Pacific Ace, Rizal Highway corner Aguinaldo Street, Subic Bay Freeport Zone, Olongapo City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "68"
+    }
+  },
+  {
+    "name": "Pampanga Development Bank",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "McArthur Highway, Dolores, San Fernando City, 2000 Pampanga",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "69"
+    }
+  },
+  {
+    "name": "Penbank, Inc. (A Private Development Bank) (formerly: Peninsula Rural Bank, Inc.)",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "3/F Penbank Centre, RDRDC Building, Santiago Blvd., Gen. Santos City, South Cotabato 9500",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "70"
+    }
+  },
+  {
+    "name": "Phil Star Development Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Alpa Hotel, Tolentino Road, Kumintang Ibaba, Batangas City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "73"
+    }
+  },
+  {
+    "name": "Philippine Business Bank, Inc., A Savings Bank",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "350 Rizal Ave. Ext. cor. 8th Ave., Grace Park, Caloocan City 1403",
+    "notes": "http://www.pbb.com.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "71"
+    }
+  },
+  {
+    "name": "Philippine Savings Bank",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "PSBank Center, 777 Paseo de Roxas cor. Sedeno St., Makati City",
+    "notes": "http://www.psbank.com.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "72"
+    }
+  },
+  {
+    "name": "Producers Savings Bank Corporation",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "17F AIC Burgundy Empire Tower, ADB Avenue corner Sapphire St., Ortigas Center, 1605 Pasig City",
+    "notes": "www.producersbank.com.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "74"
+    }
+  },
+  {
+    "name": "Queen City Development Bank, Inc. or Queenbank, A Thrift Bank",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Queenbank Financial Center, Sky City Tower, Mapa St., Iloilo City 5000",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "75"
+    }
+  },
+  {
+    "name": "RCBC Microbank - A Thrift Bank Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "AndaRizal Center, Rizal Corner Anda Street, Barangay 3-A, Davao City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "65"
+    }
+  },
+  {
+    "name": "Sterling Bank of Asia, Inc. (A Savings Bank)",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Sterling Bank Corporate Center, Ortigas Avenue, Greenhills, 1500 San Juan City",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "76"
+    }
+  },
+  {
+    "name": "Sun Savings Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "No. 45 Don Gil Garcia corner Escario Streets, Cebu City",
+    "notes": "www.sunsavings.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "77"
+    }
+  },
+  {
+    "name": "UCPB Savings Bank",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "18/F UCPB Bldg., Makati Avenue, Makati City 0728",
+    "notes": "http://www.ucpb.com",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "79"
+    }
+  },
+  {
+    "name": "University Savings Bank, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "3rd Floor Corporate Building, UPHSL Compound, Sto. Niño, Biñan, Laguna",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "80"
+    }
+  },
+  {
+    "name": "Wealth Development Bank Corporation",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "Taft Financial Center, Cardinal Rosales Ave., Cebu Business Park, Cebu City 6000",
+    "notes": "",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "81"
+    }
+  },
+  {
+    "name": "Yuanta Savings Bank Philippines, Inc.",
+    "segment": "thrift_bank",
+    "sub_segment": "",
+    "hq": "G/F Chatham House Condominium, 116 Valero cor. V.A. Rufino Sts. , Salcedo Village, 1227 Makati City",
+    "notes": "www.yuanta.com.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
+      "regulator": "BSP",
+      "url": "https://www.bsp.gov.ph/_api/web/lists/getbytitle('Institutions')/items?$select=InstitutionID,Title,ShortBankName,InstitutionTypeID,InstitutionTypeID2,InstitutionTypeID3,Address,NumOffice,Status,Website,Modified&$filter=InstitutionTypeID%20eq%20'10'&$top=500",
+      "as_of": "2026-09-14",
+      "registry_id": "78"
     }
   }
 ]
