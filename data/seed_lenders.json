@@ -733,5 +733,1880 @@
       "as_of": "2026-09-14",
       "registry_id": "78"
     }
+  },
+  {
+    "name": "Acom Consumer Finance Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "1. ACOM – Fast Cash Loan. Simple.",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201724897"
+    }
+  },
+  {
+    "name": "Advance Tech Lending Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "2. https://advance.ph/",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201819635"
+    }
+  },
+  {
+    "name": "AETHERIUM LENDING, INC. doing business under the name of BilisCash, PesoKey, SurePeso (formerly Codeblock Lending Inc.)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "3. BilisCash4. PesoKey5. SurePeso",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201913681"
+    }
+  },
+  {
+    "name": "Asialink Finance Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "6. Asialink Mobile CRM App",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "A199711768"
+    }
+  },
+  {
+    "name": "Asiasource Financial Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "7. FINN",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201412567"
+    }
+  },
+  {
+    "name": "Asteria Lending Inc. Inc. Doing Business under the name and style of Cashbazaar",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "8. https://www.asteria.com.ph/",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201603853"
+    }
+  },
+  {
+    "name": "AstraFund Lending Corp. Doing Business under the names and styles of Surelo and Cashinin (formerly: FLASH CASH 101 LENDING CORP. Doing business under FLASH CASH LENDING)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "9. Surelo10. Cashini",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201915317"
+    }
+  },
+  {
+    "name": "Biyaya Lending Corporation Doing Business Under the Name and Style of LoanStream and LendWise (Formerly Armorak Lending Inc)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "11. LoanStream12. LendWise",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201908271"
+    }
+  },
+  {
+    "name": "Bukas Finance Corp",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "13. https://bukas.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201901691"
+    }
+  },
+  {
+    "name": "Cash Mart Asia Lending Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "14. Cashmart.ph (website)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201610084"
+    }
+  },
+  {
+    "name": "Cashbee Lending Services Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "15. Cashbee.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201912321"
+    }
+  },
+  {
+    "name": "CASH-EXPRESS PHILIPPINES FINANCING INC. UNDER THE BUSINESS STYLE AND NAME OF CASH-EXPRESS (Formerly Cashxpress South East Asia Lending Inc)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "16. https://cashxpress.ph/",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201951088"
+    }
+  },
+  {
+    "name": "Cashmum Lending Investors Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "17. Cashmum",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS202102336"
+    }
+  },
+  {
+    "name": "Ceimmarj Financing Incorporated",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "18. Mega Peso (formerly cfiph.com)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS200308112"
+    }
+  },
+  {
+    "name": "Cepat Kredit Financing Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "19. www.cepatkreditfinancing.com",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201909976"
+    }
+  },
+  {
+    "name": "Copperstone Lending Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "20. Pococash21. Peso Buffet22. Load Cash23. Moca Moca24. Quickla",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "2021050012959-04"
+    }
+  },
+  {
+    "name": "Corpfund Lending Investor Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "(Corpfund Facebook account, used for marketing purposes only)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "DS93000045"
+    }
+  },
+  {
+    "name": "Crawfort Micro Lending Technologies Philippines Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "25. crawfort.com.ph (FB page, used for marketing purposes only)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201906864"
+    }
+  },
+  {
+    "name": "Df Credit Lending Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "26. Funpera",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS202002430"
+    }
+  },
+  {
+    "name": "Discovery Credit Solutions Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "27. https://discoverycsc.com/",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS202000839"
+    }
+  },
+  {
+    "name": "Dolphin Lending Investor, Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "28. PesoGO29. Microloan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201911897"
+    }
+  },
+  {
+    "name": "Easycash Lending Company Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "30. Easycash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201001882"
+    }
+  },
+  {
+    "name": "Educ4All Lending Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "31. www.invested.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201629776"
+    }
+  },
+  {
+    "name": "E-Generation Lending Corporation Operating Under The Name Of Pesopay Lending;Cash-Here Lending;Snappy Cash Lending;Mywallet Lending;Mr. Cash Lending;Pesobox Lending;Loanup Lending;",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "32. Mr. Cash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "2021070020530-12"
+    }
+  },
+  {
+    "name": "Elending Lending Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "33. Pocketcash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201912383"
+    }
+  },
+  {
+    "name": "Empire Peak Lending Investors Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "34. Pondocash35. Peranyo",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201919994"
+    }
+  },
+  {
+    "name": "Esquire Financing Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "36. esquire.ph37. esquire.com.ph (facebook, instagram, twitter and linkedin are used for marketing purposes only)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201102284"
+    }
+  },
+  {
+    "name": "“ETOMO FINANCING CORPORATION (Formerly And Financing Corporation)”",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "38. Etomo (formerly Lendpinoy)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201840930"
+    }
+  },
+  {
+    "name": "Fast Coin Lending Corp",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "39. Coco Peso40. Cashguard41. Cashcow",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS20190000277"
+    }
+  },
+  {
+    "name": "Fidoph Lending Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "42. Fido Philippines43. www.Fido.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201825101"
+    }
+  },
+  {
+    "name": "Finance Technologies Inc. Doing Business Under The Name Of Pitacash",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "44. Pitacash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201902369"
+    }
+  },
+  {
+    "name": "FINGERTIP FINANCE CORP. doing business under the name and style of Big Loan (Formerly: FINGERTIP LENDING CORP. doing business under the name and style of Big Loan)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "45. Big Loan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "2020070001053-00"
+    }
+  },
+  {
+    "name": "First Circle Growth Finance Corp",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "46. www.my.firstcircle.ph47. www.firstcircle.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201605477"
+    }
+  },
+  {
+    "name": "First Digital Finance Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "48. Balikbayad49. Billease50. FDFC",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201516347"
+    }
+  },
+  {
+    "name": "FlexiPeso Lending Inc. doing business under the name/s and style/s of QuickPuhunan, CashSagip, LendWais, LuckyPera, WorthyFund and CashTugon",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "51. CashSagip52. LendWais53. QuickPuhunan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "2024010133434-09"
+    }
+  },
+  {
+    "name": "FT Lending Master Philippines Corp",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "54. FT Lending",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201910863"
+    }
+  },
+  {
+    "name": "Fuse Financing, Inc. (Formerly Fuse Lending Inc)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "55. Fuse",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201617622"
+    }
+  },
+  {
+    "name": "Gofcash Lending Corporation operating under the name of Gogo Cash, GoFcash, GoFcash VIP and GoFcash Loan (formerly: Fcash Global Lending Inc)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "56. Gogo Cash57. GoFcash58. GoFcash VIP59. GoFcash Loan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201803813"
+    }
+  },
+  {
+    "name": "Grab Financial Services Philippines, Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "60. GrabFinance (website)61. Grab Finance (within the Grab application)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201905977"
+    }
+  },
+  {
+    "name": "Happyfund Lending Investors Inc. doing business under the name and styles of PAGHIRAM, PESO ONLINE and PHPOCKET",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "62. Paghiram63. Peso Online64. PHPocket",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201840987"
+    }
+  },
+  {
+    "name": "HC Consumer Finance Philippines, Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "65. My Home Credit",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201301354"
+    }
+  },
+  {
+    "name": "Hi-Fin Lending, Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "66. Peso Wallet67. Credit Cash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201910995"
+    }
+  },
+  {
+    "name": "HT Financial lending Services (PH) Corp",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "68. HiCASH Website69. HiCASH",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201905455"
+    }
+  },
+  {
+    "name": "Hupan Lending Technology Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "70. Cashme71. EZLoan72. Sukiloan73. Cashwow",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201901197"
+    }
+  },
+  {
+    "name": "Idirect Finance Company Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "74. Direct Loan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "2021080023709-02"
+    }
+  },
+  {
+    "name": "Ifun Lending Corp. Doing Business Under The Name And Style Of “Madaloan”",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "75. Madaloan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "2021090025243-01"
+    }
+  },
+  {
+    "name": "Inclusive Credit Lending Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "76. Pinoy Peso",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201909928"
+    }
+  },
+  {
+    "name": "JACCS Finance Philippines Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "77. www.jaccs.com.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201610866"
+    }
+  },
+  {
+    "name": "JOYWIN LENDING INVESTOR, INC. doing business under the name and style of JoyPeso",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "78. JoyPeso",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201826247"
+    }
+  },
+  {
+    "name": "Just Smile Lending Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "79. FRESHAPP",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS202011342"
+    }
+  },
+  {
+    "name": "Kayamo Atlas Lending Corp",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "80. www.kayamo.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201914952"
+    }
+  },
+  {
+    "name": "King Cash Lending Investors Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "81. Insta Cash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS202104554"
+    }
+  },
+  {
+    "name": "KREDIVO PHILIPPINES LENDING CORP. (Formerly Advantage Lending Corp)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "82. Kredivo PH (Formerly Advantage Lending Corp)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201905678"
+    }
+  },
+  {
+    "name": "Kusog Pera Lending Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "83. Kusog Pera84. SnaPera",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201916669"
+    }
+  },
+  {
+    "name": "Kviku Lending Co. Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "85. kviku.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201918702"
+    }
+  },
+  {
+    "name": "Leaflending Inc. doing business under the name/s and style/s of CredoPera, Loanova and OnePeso",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "86. Loanova87. Onepeso88. Credopera",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS2024120181312-01"
+    }
+  },
+  {
+    "name": "Leapgen Lending Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "89. Pesohaus",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201915717"
+    }
+  },
+  {
+    "name": "LENDORA LENDING CORP. doing business under the names and styles of Lendra and Finplo (formerly Treasure Bowl Fintech Lending Corp.)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "90. Lendra91. Finplo",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201916340"
+    }
+  },
+  {
+    "name": "Lf Lending Services Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "92. LF Lending",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS202001294"
+    }
+  },
+  {
+    "name": "Link Credit Lending Investors Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "93. Ipeso94. Pesoin",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201914644"
+    }
+  },
+  {
+    "name": "Loan Star Lending Group Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "95. loanstarlending.com.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201420759"
+    }
+  },
+  {
+    "name": "Lucky Shell Fintech Lending, Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "96. Maypera",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201912995"
+    }
+  },
+  {
+    "name": "Mabilis Cash Financing Corp",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "97. Mabilis Cash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201907662"
+    }
+  },
+  {
+    "name": "Magician Of Money Lending Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "98. PeraMoo",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201918391"
+    }
+  },
+  {
+    "name": "Makati Loan, Inc. doing business under the name and style of Peso Cash Loan",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "99. Peso Cash Loan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201917209"
+    }
+  },
+  {
+    "name": "Masaganang Buhay Finance Philippines Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "100. Pesoloan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201824008"
+    }
+  },
+  {
+    "name": "MCP Finance Inc (formerly “Transnational Financial Services, Inc.”)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "101. MCP Finance Inc",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "138629"
+    }
+  },
+  {
+    "name": "Microdot Lending Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "102. Credit Cash103. Credit Peso104. Cash Baka105. Cash Mabilis106. Go Peso",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201951287"
+    }
+  },
+  {
+    "name": "Monana Lending Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "107. Pondoln108. PeraPera",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201916699"
+    }
+  },
+  {
+    "name": "Monee (Credit) Finance Philippines, Inc. doing business under the name SPayLater and Sloans (formerly Seamoney (Credit) Finance Phil Inc)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "109. Spaylater110. Sloans",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS202005382"
+    }
+  },
+  {
+    "name": "MoneyCat Financing Inc. doing business under the names and styles of MoneyCat.Ph and One Click Money.Ph",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "111. Moneycat.Ph112. One click money.ph113. OCM114. Cash2U",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201953073"
+    }
+  },
+  {
+    "name": "Mr Angel Credit Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "115. QLO Quick Loans Online (website)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201424334"
+    }
+  },
+  {
+    "name": "Myloan Lending Investors Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "116. Pesocash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201900197"
+    }
+  },
+  {
+    "name": "Neuroncredit Financing Company Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "117. Atome PH",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201816338"
+    }
+  },
+  {
+    "name": "New Cross Credit And Financing Gate Ph Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "118. Savii",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201628816"
+    }
+  },
+  {
+    "name": "Nfinit Lending Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "119. nfnit.com.ph (nfnit fb page, used for marketing purposes)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS200809669"
+    }
+  },
+  {
+    "name": "Online Loans Pilipinas Financing Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "120. Online Loans Pilipinas121. Online Loans Pilipinas (Facebook page)122. Onlineloanspilipinas.ph123. Online loans Pilipinas-Fastpeso cash lending app124. Kreddy.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201726430"
+    }
+  },
+  {
+    "name": "Paloo Financing, Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "125. Cashalo",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201800209"
+    }
+  },
+  {
+    "name": "Pera247 Lending Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "126. Pera247",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201734339"
+    }
+  },
+  {
+    "name": "Perajet Lending Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "127. Perajet",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201629480"
+    }
+  },
+  {
+    "name": "Peso Agad Lending Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "128. Vplus",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201918401"
+    }
+  },
+  {
+    "name": "Peso Redee Financing Co. Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "129. Peso Redee",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201804564"
+    }
+  },
+  {
+    "name": "Philippine Cashtrout Lending Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "130. Pesomio131. Mocasa132. Cashoyo",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201910407"
+    }
+  },
+  {
+    "name": "Philippine Rup Financing Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "133. Pesos.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201909023"
+    }
+  },
+  {
+    "name": "PIPO Financing (PH) Inc. (formerly known as Kidmmanj Lending Inc.)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "134. TikTok",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201729260"
+    }
+  },
+  {
+    "name": "Plentina Lending, Inc. Doing Business Under The Name And Style Of Plentina",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "135. Plentina.com136. Plentina",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS20200001117"
+    }
+  },
+  {
+    "name": "Prima Fintech (Philippines) Lending Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "137. Light Kredit138. Peso Pocket139. Prima Loan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201951100"
+    }
+  },
+  {
+    "name": "Prime Global Finance Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "140. PG Finance",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "A199610344"
+    }
+  },
+  {
+    "name": "PXT Lending Investors Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "141. PXT Lending Investors Inc",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201803298"
+    }
+  },
+  {
+    "name": "Quark Financing Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "142. Madali Loan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS20200000916"
+    }
+  },
+  {
+    "name": "Radiowealth Finance Company Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "143. Loan Application Portal (via RFC Website)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "AS9600005A"
+    }
+  },
+  {
+    "name": "Right Choice Finance Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "144. myRCF145. myRightChoice",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201612058"
+    }
+  },
+  {
+    "name": "Royal Yohoo Lending Investors Corporations",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "146. Happypera2",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201906145"
+    }
+  },
+  {
+    "name": "Scoreone Financing Corp",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "147. E-Perash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201919995"
+    }
+  },
+  {
+    "name": "Second Pay Financing Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "148. EzLoan149. MMLoan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201908038"
+    }
+  },
+  {
+    "name": "Singularity Financing Inc. doing business under the name/s and style/s of LPeso, Pesoplus, Wecash, Cashnow, Gopeso, Pesofree and Paay Crediti (formerly Singularity Lending Inc.)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "150. Lpeso151. Pesoplus",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "2021060015436-59"
+    }
+  },
+  {
+    "name": "Skyro Lending Inc (Formerly Jungle Lending Inc)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "152. Skyro (formerly www. heyjungle.com)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS202002223"
+    }
+  },
+  {
+    "name": "Snapcash Lending, Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "153. Masayacash154. Peso2you155. CashniJuan156. Peso2go157. Jetpeso",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201804836"
+    }
+  },
+  {
+    "name": "Sofi Financing Inc. operating under the name of Finbro.ph ( Formerly Sofi Lending Inc operating under the name of Finbro.ph)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "158. finbro.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201908275"
+    }
+  },
+  {
+    "name": "Streetcorner Finance Co. Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "159. InvestKo",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201728431"
+    }
+  },
+  {
+    "name": "Streetcorner Lending Corp. Doing Business Under The Name And Style Of Akulaku",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "160. Akulaku",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201606603"
+    }
+  },
+  {
+    "name": "SULIT LENDING CORPORATION Doing business under the name of “GoraLoan” and “PeraSure” (formerly E-Borrow Lending Corp.)",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "161. GoraLoan162. PeraSure",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "2020100002616-03"
+    }
+  },
+  {
+    "name": "Sumisho Motor Finance Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "163. Sumisho",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS200917691"
+    }
+  },
+  {
+    "name": "Sumulong Financing Inc., doing business under the name/s and style/s of GoPeso, FastPeso, and Fundly.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "164. GoPeso",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201915712"
+    }
+  },
+  {
+    "name": "SunLoan Lending Investors Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "165. Cashify166. Finhawa",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201900565"
+    }
+  },
+  {
+    "name": "Sunprime Finance Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "167. LoanOnline",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201916698"
+    }
+  },
+  {
+    "name": "SUPER-SPACE PH LENDING INC. doing business under the name and style PesoKuwento and PesoHere",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "168. PesoHere169. PesoKuwento",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS2021030008899"
+    }
+  },
+  {
+    "name": "Supreme Money Lending Corp",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "170. www.suprememlc.ph",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS202001119"
+    }
+  },
+  {
+    "name": "SURITY CASH LENDING INVESTORS CORP.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "171. Surity Cash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201910185"
+    }
+  },
+  {
+    "name": "Tala Financing Philippines Inc",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "172. Tala",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201710582"
+    }
+  },
+  {
+    "name": "Tekwang Lending Corp",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "173. Tekcash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201911369"
+    }
+  },
+  {
+    "name": "Temple Tech Finance Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "174. Tendopay",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201820732"
+    }
+  },
+  {
+    "name": "The Golden Legacy Financing Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "175. sss.goldenfinancing.com176. olap.goldenfinancing.com177. goldenfinancing.com",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "193697"
+    }
+  },
+  {
+    "name": "Thrift Platinum Lending Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "178. Moregold",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "2020120004404-02"
+    }
+  },
+  {
+    "name": "Tiwala Lending Corp",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "179. eTiwala",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201816691"
+    }
+  },
+  {
+    "name": "Toyota Financial Services Philippines Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "180. Toyota Financial Services Philippines Corporation website",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS200251691"
+    }
+  },
+  {
+    "name": "Vamo Lending Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "181. Vamo",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS20200000915"
+    }
+  },
+  {
+    "name": "Vidalia Lending Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "182. Vidalia App",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS200813771"
+    }
+  },
+  {
+    "name": "Warm Cash Lending Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "183. Honey Loan",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "2021030009095"
+    }
+  },
+  {
+    "name": "Wefund Lending Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "184. Juanhand185. Junahand186. Kidlat Peso",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201825672"
+    }
+  },
+  {
+    "name": "Wing of Integrity Lending Corp. doing business under the names and styles of Bene, and Easy Borrow",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "187. Bene188. Eeasy Borrow",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201916097"
+    }
+  },
+  {
+    "name": "Xlkash Lending Corp.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "189. Xlkash Lending",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201917309"
+    }
+  },
+  {
+    "name": "Y Finance Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "190. LoanChamp",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201800494"
+    }
+  },
+  {
+    "name": "Yinshan Lending Inc.",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "191. Happycash",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201900108"
+    }
+  },
+  {
+    "name": "Yulon Finance Philippines Corporation",
+    "segment": "lending_company",
+    "sub_segment": "olp_registered",
+    "hq": "Philippines",
+    "notes": "192. Yulon Finance’s website (https://www.yulon-finance.com.ph/)",
+    "profile": "prospect",
+    "registry": {
+      "source": "SEC list of recorded online lending platforms",
+      "regulator": "SEC",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
+      "as_of": "2026-09-14",
+      "registry_id": "CS201806119"
+    }
   }
 ]

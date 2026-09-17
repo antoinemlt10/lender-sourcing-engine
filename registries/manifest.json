@@ -63,68 +63,77 @@
       "source": "SEC list of recorded online lending platforms",
       "regulator": "SEC",
       "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-recorded-online-lending-platforms/",
-      "as_of": "",
-      "file": "raw/sec_olp.pdf",
-      "format": "pdf",
+      "as_of": "2026-09-14",
+      "file": "raw/sec_olp.csv",
+      "format": "csv",
       "segment": "lending_company",
       "sub_segment": "olp_registered",
       "include": true,
       "columns": {
-        "name": "company",
-        "registry_id": "certificate",
-        "extra": "platform"
+        "name": "company name",
+        "registry_id": "sec number",
+        "extra": "online lending platform"
       },
-      "notes": "The list names the operating company and its platform(s). Record the as-of date printed on the PDF. These lenders already take applications online, so the document-based underwriting pain is the most visible here."
+      "notes": "Read on 2026-09-17 from the HTML table on the page (the SEC publishes this list as a page, not a file). The page heading reads: 'List of Financing and Lending Companies Recorded with the SEC and their Online Lending Platforms as reported pursuant to SEC MC 20, series of 2026 as of 14 September 2026'. sec.gov.ph blocks scripted downloads, so the table was captured from the rendered page in a normal Chrome session (see scripts/sec_tables_to_csv.py) and converted to CSV without edits. registry_id is the SEC registration number printed in the 'SEC Number' column; the certificate of authority number is not on this list. The 'extra' column carries the platform names as printed. These lenders already take applications online, so the document-based underwriting pain is the most visible here."
     },
     {
       "id": "sec_financing_companies",
       "source": "SEC list of financing companies with certificate of authority (RA 8556)",
       "regulator": "SEC",
-      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/lending-companies-and-financing-companies/",
-      "as_of": "",
+      "url": "https://www.sec.gov.ph/wp-content/uploads/2023/11/2023List_UPDATED-LIST-OF-REGISTERED-FC-30-SEPT-2023-1.pdf",
+      "as_of": "2023-09-30",
       "file": "raw/sec_financing_companies.pdf",
       "format": "pdf",
       "segment": "financing_company",
       "sub_segment": "",
       "include": false,
       "columns": {
-        "name": "name",
-        "registry_id": "ca no"
+        "name": "company name",
+        "registry_id": "cert. of authority no."
       },
-      "notes": "Around 700 entities. Full pool only by default. The public versions of this list have carried different as-of dates; use the most recent one on sec.gov.ph and record its date. Kita's team is the right judge of which financing companies are worth enriching."
+      "notes": "Downloaded 2026-09-17 in a normal Chrome session (sec.gov.ph blocks scripted downloads). The PDF is titled 'LIST OF FINANCING COMPANIES AS OF 30 SEPTEMBER 2023'. It is the most recent list with certificate of authority found on sec.gov.ph: the pages linked from the site's lending and financing section (list-of-lending-companies/ and list-of-lending-companies-3/) still show the 31 May 2020 lists, and this 2023 file was located through a web search and confirmed to be served by sec.gov.ph. The page that links it was not found. Columns on the list: company name, SEC registration no., cert. of authority no., date of registration; registry_id is the CA number. Around 700 entities. Full pool only by default; Kita's team is the right judge of which financing companies are worth enriching. Rows repeating the title on each page are dropped by drop_regex.",
+      "header_contains": "company name",
+      "drop_regex": [
+        "^LIST OF (LENDING|FINANCING) COMPANIES"
+      ]
     },
     {
       "id": "sec_lending_companies",
       "source": "SEC list of lending companies with certificate of authority (RA 9474)",
       "regulator": "SEC",
-      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-lending-companies-2/",
-      "as_of": "",
+      "url": "https://www.sec.gov.ph/wp-content/uploads/2023/11/2023List_UPDATED-LIST-OF-REGISTERED-LC-30-SEPT-2023-1.pdf",
+      "as_of": "2023-09-30",
       "file": "raw/sec_lending_companies.pdf",
       "format": "pdf",
       "segment": "lending_company",
       "sub_segment": "",
       "include": false,
       "columns": {
-        "name": "name",
-        "registry_id": "ca no"
+        "name": "company name",
+        "registry_id": "cert. of authority no."
       },
-      "notes": "Full pool only by default (thousands of small entities). The OLP list above is the enriched subset."
+      "notes": "Downloaded 2026-09-17 in a normal Chrome session (sec.gov.ph blocks scripted downloads). The PDF is titled 'LIST OF LENDING COMPANIES AS OF 30 SEPTEMBER 2023'. It is the most recent list with certificate of authority found on sec.gov.ph: the pages linked from the site's lending and financing section (list-of-lending-companies/ and list-of-lending-companies-3/) still show the 31 May 2020 lists, and this 2023 file was located through a web search and confirmed to be served by sec.gov.ph. The page that links it was not found. Columns on the list: company name, SEC registration no., cert. of authority no., date of registration; registry_id is the CA number. Around 3,000 entities. Full pool only by default (the OLP list above is the enriched subset). Rows repeating the title on each page are dropped by drop_regex.",
+      "header_contains": "company name",
+      "drop_regex": [
+        "^LIST OF (LENDING|FINANCING) COMPANIES"
+      ]
     },
     {
       "id": "sec_revoked_suspended",
       "source": "SEC list of revoked and suspended lending and financing companies",
       "regulator": "SEC",
-      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/lending-companies-and-financing-companies/",
+      "url": "https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-revoked-and-suspended-lending-companies/",
       "as_of": "",
-      "file": "raw/sec_revoked_suspended.pdf",
-      "format": "pdf",
+      "file": "raw/sec_revoked_suspended.csv",
+      "format": "csv",
       "segment": "revoked_or_suspended",
       "sub_segment": "",
       "include": false,
       "columns": {
-        "name": "name"
+        "name": "name",
+        "extra": "list"
       },
-      "notes": "Not a prospect list: a gate. Any name in the enrichment pool that also appears here should get closeability near 0.1 (see the closeability rubric). Cross-checking is done by the enrichment prompt from public data today; a hard join on this extract is a small next step."
+      "notes": "Read on 2026-09-17 from the six HTML tables on the page: revoked lending company CA (56 rows), revoked financing company CA (75), suspended lending company CA (30), revoked primary registration (414), revoked lending companies organised as partnerships (835), and lending or financing companies with cease and desist orders (3). The page prints no as-of date; each row carries its own revocation date in the raw CSV. Captured from the rendered page in a normal Chrome session (see scripts/sec_tables_to_csv.py) and converted without edits. The 'extra' column names the list a row came from. Not a prospect list: a gate. Any name in the enrichment pool that also appears here should get closeability near 0.1 (see the closeability rubric). Cross-checking is done by the enrichment prompt from public data today; a hard join on this extract is a small next step."
     }
   ]
 }
