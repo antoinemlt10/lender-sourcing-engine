@@ -40,11 +40,25 @@ sources` parses them and writes:
 For the Philippines the manifest names the SEC lists of lending companies,
 financing companies and recorded online lending platforms, the SEC list of
 revoked and suspended companies, and the BSP directory of banks (digital,
-thrift, rural and cooperative). The raw files are not committed; download
-them on the day you build the pool and record their dates. The repository
-ships with a six-row starter extract (the digital banks, from a 2022 press
-report) so that the commands run end to end before any register has been
-downloaded; the manifest says to replace it.
+thrift, rural and cooperative). The raw files are not committed; the
+extracts are. How each raw file was obtained is written in the manifest
+notes, and two scripts reproduce the downloads:
+
+- `scripts/fetch_bsp_directory.py` reads the BSP directory from the feed
+  behind its public page and writes one CSV per bank type;
+- `scripts/sec_tables_to_csv.py` converts the two SEC lists that are
+  published as HTML tables (online lending platforms, revoked and
+  suspended companies) from a capture of the rendered page.
+
+The SEC lists of lending and financing companies with certificate of
+authority are the 30 September 2023 PDFs, the most recent found on
+sec.gov.ph; the pages the site links still show May 2020 lists.
+
+The revoked and suspended list is a gate, not a prospect list. `sources`
+matches every seed in the enrichment pool against it by normalized name and,
+on a match, appends one sentence to the seed's notes naming the list and its
+URL. It is a name match, not a certificate match, so the note says
+"same-named entity" and leaves the judgement to the enrichment.
 
 If a PDF resists the table parser, `sources --inspect` prints what
 pdfplumber reads; adjust the column mapping or a line regex in the
@@ -120,12 +134,18 @@ python -m lender_engine rank                # re-score and re-render after a con
 python -m lender_engine diagnose            # distribution checks on outputs/ranked_accounts.json
 python -m lender_engine brief "Name"        # one-page brief on one account (web search on)
 
-python3 -m unittest discover tests          # 25 tests, no network
+python scripts/check_personal_data.py       # e-mails, phone numbers, personal profile URLs in committed files
+python3 -m unittest discover tests          # 27 tests, no network
 ```
 
 `run --skip-enriched` resumes an interrupted run without re-spending on
-accounts already in the store. `--config` points the engine at another
-profile; the same code, another market or another vendor.
+accounts already in the store. `run --only "Name"` (repeatable) processes
+just the named seeds, `--skip "Name"` leaves them out. `--config` points the
+engine at another profile; the same code, another market or another vendor.
+
+Every API call appends its token counts and web search count to
+`outputs/llm_usage.jsonl` (git-ignored), so the cost of a run can be read
+back after the fact.
 
 ## Rules the enrichment follows
 
@@ -153,8 +173,9 @@ should be edited, which is a config change.
 
 - It does not know Philippine lending law or credit risk in emerging
   markets. It reads registers and public pages.
-- It does not verify licence status against the SEC revoked list by a hard
-  join yet; the prompt asks for it from public data. A join on the extract
-  is a small next step.
+- The revoked-list cross-check is a name match. A same-named entity on the
+  list may be a different company, and a revocation later lifted still
+  matches. The enrichment prompt is asked to check the current status from
+  public data.
 - It is not a CRM and has no contact data.
 - Its rankings have not been checked against any real pipeline.

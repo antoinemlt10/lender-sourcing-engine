@@ -60,9 +60,19 @@ class TestSources(unittest.TestCase):
         sheet.append([None, None])
         book.save(self.root / "raw" / "bsp.xlsx")
 
+        # A gate register (revoked list) naming one company that is also in the pool.
+        with (self.root / "raw" / "revoked.csv").open("w", newline="", encoding="utf-8") as h:
+            w = csv.writer(h)
+            w.writerow(["name", "list"])
+            w.writerow(["BETA BANK CORPORATION", "revoked CA"])
+            w.writerow(["Unrelated Lending Co.", "revoked CA"])
+
         self.manifest = self.root / "manifest.json"
         self.manifest.write_text(json.dumps({
             "registers": [
+                {"id": "revoked", "source": "test revoked list", "regulator": "SEC", "url": "https://sec.example/revoked",
+                 "as_of": "", "file": "raw/revoked.csv", "format": "csv",
+                 "segment": "revoked_or_suspended", "include": False, "columns": {"name": "name"}},
                 {"id": "digital", "source": "test extract", "regulator": "BSP", "url": "https://bsp.example",
                  "as_of": "2026-01-01", "file": "extract/digital.csv", "format": "extract",
                  "segment": "digital_bank", "include": True},
@@ -118,7 +128,7 @@ class TestSources(unittest.TestCase):
         # Full pool has every row of every readable register, including the excluded one.
         with (self.root / "registry_pool_full.csv").open(encoding="utf-8") as h:
             rows = list(csv.DictReader(h))
-        self.assertEqual(len(rows), 5)
+        self.assertEqual(len(rows), 7)  # 5 register rows plus the 2 gate (revoked) rows, all in the full pool
         self.assertEqual({r["in_enrichment_pool"] for r in rows if r["segment"] == "thrift_bank"}, {"no"})
         self.assertIn("missing: SKIPPED", report)
         # The written seed file round-trips through the engine's loader.
@@ -130,3 +140,14 @@ class TestSources(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+    def test_gate_register_annotates_matching_seeds(self):
+        out = self.root / "seeds.json"
+        seeds, report = build_seed_pool(self.manifest, out)
+        by_name = {s.name: s for s in seeds}
+        self.assertIn("Cross-check: a same-named entity appears on the test revoked list "
+                      "(https://sec.example/revoked); that list prints no date.",
+                      by_name["Beta Bank Corporation"].notes)
+        self.assertNotIn("Cross-check", by_name["Alpha Digital Bank Inc."].notes)
+        self.assertNotIn("Unrelated Lending Co.", by_name)  # gate rows never enter the pool
+        self.assertIn("Gate cross-check: 1 seed(s)", report)

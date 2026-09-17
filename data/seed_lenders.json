@@ -334,7 +334,7 @@
     "segment": "thrift_bank",
     "sub_segment": "",
     "hq": "6th Floor ODC International Plaza Building, 219 Salcedo Street, Legaspi Village, Makati City",
-    "notes": "https://www.equicomsavings.com",
+    "notes": "https://www.equicomsavings.com Cross-check: a same-named entity appears on the SEC list of revoked and suspended lending and financing companies (https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-revoked-and-suspended-lending-companies/); that list prints no date.",
     "profile": "prospect",
     "registry": {
       "source": "BSP Directory of Banks and Non-Bank Financial Institutions: thrift banks",
@@ -1159,7 +1159,7 @@
     "segment": "lending_company",
     "sub_segment": "olp_registered",
     "hq": "Philippines",
-    "notes": "39. Coco Peso40. Cashguard41. Cashcow",
+    "notes": "39. Coco Peso40. Cashguard41. Cashcow Cross-check: a same-named entity appears on the SEC list of revoked and suspended lending and financing companies (https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-revoked-and-suspended-lending-companies/); that list prints no date.",
     "profile": "prospect",
     "registry": {
       "source": "SEC list of recorded online lending platforms",
@@ -1654,7 +1654,7 @@
     "segment": "lending_company",
     "sub_segment": "olp_registered",
     "hq": "Philippines",
-    "notes": "96. Maypera",
+    "notes": "96. Maypera Cross-check: a same-named entity appears on the SEC list of revoked and suspended lending and financing companies (https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-revoked-and-suspended-lending-companies/); that list prints no date.",
     "profile": "prospect",
     "registry": {
       "source": "SEC list of recorded online lending platforms",
@@ -2419,7 +2419,7 @@
     "segment": "lending_company",
     "sub_segment": "olp_registered",
     "hq": "Philippines",
-    "notes": "175. sss.goldenfinancing.com176. olap.goldenfinancing.com177. goldenfinancing.com",
+    "notes": "175. sss.goldenfinancing.com176. olap.goldenfinancing.com177. goldenfinancing.com Cross-check: a same-named entity appears on the SEC list of revoked and suspended lending and financing companies (https://www.sec.gov.ph/lending-companies-and-financing-companies-2/list-of-revoked-and-suspended-lending-companies/); that list prints no date.",
     "profile": "prospect",
     "registry": {
       "source": "SEC list of recorded online lending platforms",

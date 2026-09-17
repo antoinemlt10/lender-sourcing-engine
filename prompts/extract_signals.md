@@ -67,6 +67,11 @@ check, in priority order:
   you did not find in a source.
 - Personas are ROLE-level only (for example "Head of Credit Risk"), never a
   named person.
+- No individual's name anywhere in the output: not in the snapshot, not in
+  a rationale, not in a quoted claim. When a source quotes a person, write
+  the role instead ("the CEO said ..."). Never cite a personal profile page
+  (linkedin.com/in/..., a personal social media account) as a source URL;
+  cite the company page or the press article instead.
 - Every evidence item needs a real source URL taken from your search
   results. Never invent or guess a URL.
 - Set confidence "sourced" ONLY when the cited URL directly supports the

@@ -31,6 +31,7 @@ $extracted_json
 - Frame it as a hypothesis to test in a bounded pilot with a clear success
   metric (for example days-to-decision, share of applications decided
   without a manual step, document rejection rate), not a promise.
+- No individual's name: refer to people by role only.
 - Stay honest: use only what the signals support; where the signals were
   marked "inferred", hedge accordingly ("likely", "if, as it appears, ...").
 

@@ -23,8 +23,9 @@ $account_json
 
 Use web search sparingly to refresh or confirm the signals above; cite every
 new fact with its URL. Keep the same honesty rules as the enrichment: public
-data only, role-level personas, no invented numbers, sourced vs inferred
-stated explicitly.
+data only, role-level personas, no individual's name anywhere (not even in
+a quote: write the role instead), no personal profile pages as sources, no
+invented numbers, sourced vs inferred stated explicitly.
 
 Structure, in this order, each section short:
 

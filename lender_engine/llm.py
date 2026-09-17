@@ -11,7 +11,9 @@ python-dotenv). No key is ever hardcoded.
 
 from __future__ import annotations
 
+import json
 import os
+import time
 from pathlib import Path
 from string import Template
 from typing import Any
@@ -36,6 +38,9 @@ WEB_SEARCH_TOOL: dict[str, Any] = {
 # the conversation resumes it. Cap the resumes so we can never loop forever.
 MAX_CONTINUATIONS = 5
 
+# One JSON line per prompt call: tokens in and out, web searches. Git-ignored.
+USAGE_LOG = Path(os.environ.get("LENDER_ENGINE_USAGE_LOG", "outputs/llm_usage.jsonl"))
+
 
 class ClaudeClient:
     """Calls the Anthropic Messages API using named prompt templates."""
@@ -50,6 +55,10 @@ class ClaudeClient:
             )
         self.model = model or os.environ.get("LENDER_ENGINE_MODEL") or DEFAULT_MODEL
         self._client = Anthropic(api_key=api_key)
+        # Running totals for the process, printed per call and appended to
+        # USAGE_LOG so the cost of a run can be read back after the fact.
+        self.usage = {"calls": 0, "input_tokens": 0, "output_tokens": 0,
+                      "cache_read_input_tokens": 0, "web_search_requests": 0}
 
     def complete(
         self,
@@ -74,6 +83,7 @@ class ClaudeClient:
         # last, or partial output would be silently dropped.
         texts: list[str] = []
         final_response = None
+        usage_events: list[Any] = []
         for _ in range(MAX_CONTINUATIONS + 1):
             response = self._client.messages.create(
                 model=self.model,
@@ -81,6 +91,7 @@ class ClaudeClient:
                 messages=messages,
                 **kwargs,
             )
+            usage_events.append(response.usage)
             texts.extend(
                 block.text for block in response.content if block.type == "text"
             )
@@ -96,6 +107,8 @@ class ClaudeClient:
                 f"{MAX_CONTINUATIONS} resume(s); giving up."
             )
 
+        self._record_usage(prompt_name, usage_events)
+
         if final_response.stop_reason == "max_tokens":
             print(
                 f"WARNING: prompt '{prompt_name}' hit max_tokens "
@@ -103,6 +116,31 @@ class ClaudeClient:
             )
 
         return "".join(texts).strip()
+
+    def _record_usage(self, prompt_name: str, usages: list[Any]) -> None:
+        """Sum the usage of one prompt (over its continuations), print and log it."""
+        row = {"ts": time.strftime("%Y-%m-%dT%H:%M:%S"), "model": self.model, "prompt": prompt_name,
+               "input_tokens": 0, "output_tokens": 0, "cache_read_input_tokens": 0, "web_search_requests": 0}
+        for u in usages:
+            row["input_tokens"] += getattr(u, "input_tokens", 0) or 0
+            row["output_tokens"] += getattr(u, "output_tokens", 0) or 0
+            row["cache_read_input_tokens"] += getattr(u, "cache_read_input_tokens", 0) or 0
+            stu = getattr(u, "server_tool_use", None)
+            row["web_search_requests"] += (getattr(stu, "web_search_requests", 0) or 0) if stu else 0
+        self.usage["calls"] += 1
+        for key in ("input_tokens", "output_tokens", "cache_read_input_tokens", "web_search_requests"):
+            self.usage[key] += row[key]
+        print(
+            f"  usage[{prompt_name}]: in={row['input_tokens']} out={row['output_tokens']} "
+            f"searches={row['web_search_requests']} | run total: in={self.usage['input_tokens']} "
+            f"out={self.usage['output_tokens']} searches={self.usage['web_search_requests']}"
+        )
+        try:
+            USAGE_LOG.parent.mkdir(parents=True, exist_ok=True)
+            with USAGE_LOG.open("a", encoding="utf-8") as handle:
+                handle.write(json.dumps(row) + "\n")
+        except OSError:
+            pass  # usage logging must never break a run
 
     @staticmethod
     def _render_prompt(prompt_name: str, variables: dict[str, str]) -> str:

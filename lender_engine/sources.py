@@ -45,6 +45,10 @@ from lender_engine.models import Registry, SeedCompany
 
 NORMALIZED_COLUMNS = ["name", "registry_id", "hq", "extra"]
 
+# A register with this segment is not a prospect list but a gate: seeds whose
+# normalized name also appears on it get a sentence appended to their notes.
+GATE_SEGMENT = "revoked_or_suspended"
+
 _CORP_SUFFIXES = re.compile(
     r"\b(inc|incorporated|corp|corporation|co|company|ltd|limited|llc|opc|"
     r"a rural bank|a thrift bank|a savings bank)\b\.?",
@@ -291,6 +295,7 @@ def build_seed_pool(manifest_path: str | Path, out_path: str | Path) -> tuple[li
     extract_dir = manifest_path.resolve().parent / "extract"
     full_rows: list[dict[str, str]] = []
     seeds: dict[str, SeedCompany] = {}
+    gate_rows: list[tuple[RegisterSpec, dict[str, str]]] = []
     report_lines: list[str] = []
     for spec in specs:
         if not _resolve(manifest_path, spec.file).exists():
@@ -301,6 +306,8 @@ def build_seed_pool(manifest_path: str | Path, out_path: str | Path) -> tuple[li
         records = parse_register(spec, manifest_path)
         if spec.format != "extract":
             write_extract(records, extract_dir / f"{spec.id}.csv")
+        if spec.segment == GATE_SEGMENT:
+            gate_rows.extend((spec, rec) for rec in records)
         included = 0
         for rec in records:
             key = normalize_name(rec["name"])
@@ -341,6 +348,13 @@ def build_seed_pool(manifest_path: str | Path, out_path: str | Path) -> tuple[li
             "kept in the full pool only (include=false)"
         )
 
+    annotated = annotate_gate_matches(seeds, gate_rows)
+    if gate_rows:
+        report_lines.append(
+            f"Gate cross-check: {len(annotated)} seed(s) share a normalized name with a "
+            f"{GATE_SEGMENT} register row: {', '.join(annotated) or 'none'}"
+        )
+
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(
@@ -357,6 +371,38 @@ def build_seed_pool(manifest_path: str | Path, out_path: str | Path) -> tuple[li
         f"enrichment pool: {len(seeds)} unique lenders -> {out_path.name}"
     )
     return list(seeds.values()), "\n".join(report_lines)
+
+
+def annotate_gate_matches(
+    seeds: dict[str, SeedCompany], gate_rows: list[tuple[RegisterSpec, dict[str, str]]]
+) -> list[str]:
+    """Cross-check the enrichment pool against gate registers (segment
+    revoked_or_suspended, for example the SEC list of revoked and suspended
+    companies).
+
+    The match is on the same normalized name the pool is deduplicated on, so
+    it is a name match, not a certificate match: a same-named entity may be a
+    different company, which is why the note says "same-named" and leaves the
+    judgement to the enrichment and the reader. Every matching seed gets one
+    sentence appended to its notes, naming the register and its URL and
+    saying whether the list prints a date. Returns the names annotated.
+    """
+    by_key: dict[str, list[RegisterSpec]] = {}
+    for spec, rec in gate_rows:
+        by_key.setdefault(normalize_name(rec["name"]), [])
+        if spec not in by_key[normalize_name(rec["name"])]:
+            by_key[normalize_name(rec["name"])].append(spec)
+    annotated: list[str] = []
+    for key, seed in seeds.items():
+        for spec in by_key.get(key, []):
+            dated = f"that list is as of {spec.as_of}" if spec.as_of else "that list prints no date"
+            sentence = (
+                f"Cross-check: a same-named entity appears on the {spec.source} "
+                f"({spec.url}); {dated}."
+            )
+            seed.notes = f"{seed.notes} {sentence}".strip() if seed.notes else sentence
+            annotated.append(seed.name)
+    return annotated
 
 
 def inspect_registers(manifest_path: str | Path, rows_to_show: int = 8) -> None:

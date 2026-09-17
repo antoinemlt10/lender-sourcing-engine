@@ -5,3 +5,4 @@ __pycache__/
 registries/raw/
 outputs/*.json
 !registries/raw/.gitkeep
+outputs/*.jsonl

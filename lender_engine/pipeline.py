@@ -20,12 +20,14 @@ def run_pipeline(
     enricher: Enricher | None = None,
     skip_enriched: bool = False,
     skip_names: list[str] | None = None,
+    only_names: list[str] | None = None,
 ) -> list[Account]:
     """Run the full pipeline and return the ranked accounts.
 
     Resilient by design: a single company failing to enrich is logged and
     skipped rather than killing the whole run. If EVERY company fails, we
     leave any previous good outputs untouched and raise PipelineError.
+    With only_names, just those seeds are processed (a targeted pilot).
     With skip_enriched=True, seeds already present in the store are not
     re-enriched (no API spend); this makes interrupted runs resumable.
     The rendered outputs always reflect the whole store, not just this run.
@@ -34,6 +36,14 @@ def run_pipeline(
         raise ValueError(f"limit must be >= 0, got {limit}")
 
     seeds = load_seeds(icp.seed_file)
+    if only_names:
+        # Mirror of --skip: keep only the named seeds (for a targeted pilot).
+        wanted = set(only_names)
+        seeds = [seed for seed in seeds if seed.name in wanted]
+        missing = sorted(wanted - {seed.name for seed in seeds})
+        if missing:
+            print(f"WARNING: --only names not in the seed pool: {', '.join(missing)}")
+        print(f"Restricting to {len(seeds)} named seed(s).")
     if skip_names:
         skips = set(skip_names)
         seeds = [seed for seed in seeds if seed.name not in skips]

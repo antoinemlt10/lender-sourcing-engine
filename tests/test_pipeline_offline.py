@@ -162,3 +162,24 @@ class TestPipelineOffline(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+    def test_only_names_restricts_the_run(self):
+        ranked = run_pipeline(
+            self.icp,
+            db_path=self.db_path,
+            out_dir=self.out_dir,
+            enricher=FakeEnricher(),
+            only_names=["SeedCo 2", "SeedCo 3", "Not A Seed"],
+        )
+        self.assertEqual(sorted(a.name for a in ranked), ["SeedCo 2", "SeedCo 3"])
+        # --only and --skip compose: skip wins for a name in both.
+        ranked = run_pipeline(
+            self.icp,
+            db_path=self.db_path,
+            out_dir=self.out_dir,
+            enricher=FakeEnricher(),
+            only_names=["SeedCo 1", "SeedCo 2"],
+            skip_names=["SeedCo 2"],
+        )
+        # The store now holds 1, 2 and 3; the rendered ranking is the whole store.
+        self.assertEqual(sorted(a.name for a in ranked), ["SeedCo 1", "SeedCo 2", "SeedCo 3"])

@@ -41,6 +41,10 @@ def _build_parser() -> argparse.ArgumentParser:
         "--skip", action="append", default=[], metavar="NAME",
         help="Skip this seed by name (repeatable) (for example defer predictable low-scorers).",
     )
+    run_p.add_argument(
+        "--only", action="append", default=[], metavar="NAME",
+        help="Process only this seed by name (repeatable); a targeted pilot.",
+    )
 
     rank_p = sub.add_parser(
         "rank", help="Re-score (with the current config) and re-render stored accounts."
@@ -99,7 +103,7 @@ def _cmd_run(args: argparse.Namespace) -> int:
     try:
         accounts = run_pipeline(
             icp, limit=args.limit, db_path=args.db, out_dir=args.out,
-            skip_enriched=args.skip_enriched, skip_names=args.skip,
+            skip_enriched=args.skip_enriched, skip_names=args.skip, only_names=args.only,
         )
     except PipelineError as exc:
         print(f"Pipeline failed: {exc}")
