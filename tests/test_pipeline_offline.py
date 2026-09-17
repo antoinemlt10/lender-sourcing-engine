@@ -159,10 +159,6 @@ class TestPipelineOffline(unittest.TestCase):
         # No outputs written on total failure.
         self.assertFalse((Path(self.out_dir) / "ranked_accounts.json").exists())
 
-
-if __name__ == "__main__":
-    unittest.main()
-
     def test_only_names_restricts_the_run(self):
         ranked = run_pipeline(
             self.icp,
@@ -183,3 +179,7 @@ if __name__ == "__main__":
         )
         # The store now holds 1, 2 and 3; the rendered ranking is the whole store.
         self.assertEqual(sorted(a.name for a in ranked), ["SeedCo 1", "SeedCo 2", "SeedCo 3"])
+
+
+if __name__ == "__main__":
+    unittest.main()

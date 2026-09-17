@@ -137,10 +137,6 @@ class TestSources(unittest.TestCase):
         self.assertEqual(len(loaded), 3)
         self.assertEqual(loaded[0].registry.url, "https://bsp.example")
 
-
-if __name__ == "__main__":
-    unittest.main()
-
     def test_gate_register_annotates_matching_seeds(self):
         out = self.root / "seeds.json"
         seeds, report = build_seed_pool(self.manifest, out)
@@ -151,3 +147,7 @@ if __name__ == "__main__":
         self.assertNotIn("Cross-check", by_name["Alpha Digital Bank Inc."].notes)
         self.assertNotIn("Unrelated Lending Co.", by_name)  # gate rows never enter the pool
         self.assertIn("Gate cross-check: 1 seed(s)", report)
+
+
+if __name__ == "__main__":
+    unittest.main()
