@@ -32,6 +32,7 @@ import json
 import statistics
 from collections import Counter, defaultdict
 from itertools import product
+from types import SimpleNamespace
 from pathlib import Path
 from typing import Any
 
@@ -113,11 +114,12 @@ def _load_rows(path: str | Path) -> list[dict[str, Any]]:
 class _S:
     def __init__(self, f: dict[str, float]):
         self._f = f
+        self.closeability = SimpleNamespace(value=f["closeability"])  # read by score.eligible
 
     def product(self) -> float:
-        return self._f["acuity"] * self._f["roi_quant"] * self._f["whitespace"] * self._f["closeability"]
+        return self._f["acuity"] * self._f["roi_quant"] * self._f["whitespace"]
 
-    FACTOR_COUNT = 4
+    FACTOR_COUNT = 3
 
 
 class _O:
@@ -247,10 +249,10 @@ def _perturbed_configs(cfg: ScoringConfig) -> list[tuple[str, ScoringConfig]]:
         if total <= 0:
             continue
         w = {kk: v / total for kk, v in w.items()}
-        variants.append((f"{k} {'+' if sign > 0 else '-'}{PERTURBATION:.2f}", ScoringConfig(weights=w, structural_floor=cfg.structural_floor)))
+        variants.append((f"{k} {'+' if sign > 0 else '-'}{PERTURBATION:.2f}", ScoringConfig(weights=w, structural_floor=cfg.structural_floor, closeability_min=cfg.closeability_min)))
     for sign in (+1, -1):
         floor = min(1.0, max(0.0, cfg.structural_floor + sign * PERTURBATION))
-        variants.append((f"floor {'+' if sign > 0 else '-'}{PERTURBATION:.2f}", ScoringConfig(weights=dict(cfg.weights), structural_floor=floor)))
+        variants.append((f"floor {'+' if sign > 0 else '-'}{PERTURBATION:.2f}", ScoringConfig(weights=dict(cfg.weights), structural_floor=floor, closeability_min=cfg.closeability_min)))
     return variants
 
 

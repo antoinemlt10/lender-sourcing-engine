@@ -70,14 +70,19 @@ Seven factors, each 0 to 1, each with a rationale and evidence items
 flagged `sourced` (a public URL directly supports the claim) or `inferred`.
 
 ```
-structural  = (acuity * roi_quant * whitespace * closeability) ^ (1/4)
+eligible    = closeability >= closeability_min        (else final = 0)
+structural  = (acuity * roi_quant * whitespace) ^ (1/3)
 operational = w1*winnability + w2*active_pain_timing + w3*reachability
 final       = round(100 * structural * (floor + (1 - floor) * operational))
 ```
 
-Structural factors multiply because each one can kill an account on its
-own: no pain, no money in the pain, an installed incumbent, no licence. The
-geometric mean keeps that gate while keeping the 0 to 100 scale readable.
+Closeability is a gate, not a factor: every lender in the pool holds a
+licence, so a higher closeability does not make a better prospect, and a
+lender below the threshold (revoked, suspended, under receivership) is not
+sellable at all and scores 0. The threshold is `closeability_min` in the
+config. The three structural factors multiply because each one can kill an
+account on its own: no pain, no money in the pain, an installed incumbent.
+The geometric mean keeps that gate while keeping the 0 to 100 scale readable.
 Operational factors add because they trade off. The floor keeps a
 structurally strong account visible when nothing is happening there this
 quarter. Weights and floor live in the config; re-ranking after a change is

@@ -165,8 +165,9 @@ def _write_markdown(accounts: list[Account], path: Path, icp: ICPConfig) -> None
         f"# {icp.name}: ranked accounts",
         "",
         f"**{len(prospects)} accounts scored** against the rubric in the config. "
-        "Structural gate = geometric mean of acuity, roi_quant, whitespace and "
-        "closeability; operational readiness = weighted average of winnability, "
+        "Closeability is an eligibility gate (below the config threshold the account "
+        "scores 0). Structural gate = geometric mean of acuity, roi_quant and "
+        "whitespace; operational readiness = weighted average of winnability, "
         "active_pain_timing and reachability. Every factor carries evidence flagged "
         "sourced or inferred; the *Sourced* column is the share of an account's "
         "evidence that has a public URL behind it.",

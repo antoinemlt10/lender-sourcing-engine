@@ -63,7 +63,7 @@ class TestScoring(unittest.TestCase):
     def test_floor_behavior_zero_operational(self):
         """operational = 0 -> final = round(100 * structural_gate * floor)."""
         acc = account("FloorCo", (0.9, 0.8, 0.7, 1.0), (0.0, 0.0, 0.0))
-        gate = (0.9 * 0.8 * 0.7 * 1.0) ** (1 / 4)  # geometric mean of the 4 factors
+        gate = (0.9 * 0.8 * 0.7) ** (1 / 3)  # geometric mean of the 3 factors; closeability is a gate
         expected = round(100 * gate * self.cfg.structural_floor)
         self.assertEqual(final_score(acc.structural, acc.operational, self.cfg), expected)
 
@@ -81,6 +81,17 @@ class TestScoring(unittest.TestCase):
     def test_perfect_account_scores_100(self):
         acc = account("PerfectCo", (1.0, 1.0, 1.0, 1.0), (1.0, 1.0, 1.0))
         self.assertEqual(final_score(acc.structural, acc.operational, self.cfg), 100)
+
+    def test_closeability_is_a_binary_gate(self):
+        """Below closeability_min the score is 0; above it, closeability does not change the score."""
+        base = account("Licensed", (0.9, 0.9, 0.8, 1.0), (0.7, 0.7, 0.7))
+        same = account("AlsoLicensed", (0.9, 0.9, 0.8, 0.6), (0.7, 0.7, 0.7))
+        below = account("Revoked", (0.9, 0.9, 0.8, 0.49), (0.7, 0.7, 0.7))
+        self.assertEqual(final_score(base.structural, base.operational, self.cfg),
+                         final_score(same.structural, same.operational, self.cfg))
+        self.assertEqual(final_score(below.structural, below.operational, self.cfg), 0)
+        strict = ScoringConfig(closeability_min=0.7)
+        self.assertEqual(final_score(same.structural, same.operational, strict), 0)
 
     def test_closeability_gates_unlicensed(self):
         """An account with a revoked licence is dragged far below its licensed twin."""

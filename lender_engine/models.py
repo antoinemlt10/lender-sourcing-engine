@@ -71,7 +71,9 @@ class Factor:
 
 @dataclass
 class StructuralScores:
-    """Is this fundamentally a good account? Factors multiply: one zero kills it.
+    """Is this fundamentally a good account? Three factors multiply: one zero
+    kills it. Closeability is not part of the product: it is a binary
+    eligibility gate (see score.py and ScoringConfig.closeability_min).
 
     Factor names are generic on purpose; what each one means for a given
     vendor is written in the ICP config's rubrics, not here.
@@ -80,17 +82,12 @@ class StructuralScores:
     acuity: Factor  # intensity of the pain the vendor removes
     roi_quant: Factor  # how directly that pain converts to money
     whitespace: Factor  # how free the account is of a locked-in incumbent
-    closeability: Factor  # structural gate: geography, licence, regulatory reach
+    closeability: Factor  # eligibility gate: licence, standing, jurisdiction
 
-    FACTOR_COUNT = 4  # score.py takes the FACTOR_COUNT-th root (geometric mean)
+    FACTOR_COUNT = 3  # score.py takes the FACTOR_COUNT-th root (geometric mean)
 
     def product(self) -> float:
-        return (
-            self.acuity.value
-            * self.roi_quant.value
-            * self.whitespace.value
-            * self.closeability.value
-        )
+        return self.acuity.value * self.roi_quant.value * self.whitespace.value
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)

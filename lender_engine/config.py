@@ -28,6 +28,7 @@ class ScoringConfig:
 
     weights: dict[str, float] = field(default_factory=_default_weights)
     structural_floor: float = 0.4  # keeps structurally-excellent accounts visible
+    closeability_min: float = 0.5  # below this, the account is ineligible and scores 0
 
 
 @dataclass
@@ -111,6 +112,11 @@ def _validate_scoring(scoring: ScoringConfig, path: str | Path) -> None:
     total = sum(weights.values())
     if abs(total - 1.0) > 1e-6:
         raise ValueError(f"{path}: scoring.weights must sum to 1.0, got {total}")
+    threshold = scoring.closeability_min
+    if isinstance(threshold, bool) or not isinstance(threshold, (int, float)):
+        raise ValueError(f"{path}: scoring.closeability_min must be numeric, got {threshold!r}")
+    if not 0.0 <= threshold <= 1.0:
+        raise ValueError(f"{path}: scoring.closeability_min must be in [0, 1], got {threshold}")
     floor = scoring.structural_floor
     if isinstance(floor, bool) or not isinstance(floor, (int, float)):
         raise ValueError(f"{path}: scoring.structural_floor must be numeric, got {floor!r}")
@@ -134,6 +140,7 @@ def load_config(path: str | Path) -> ICPConfig:
     scoring = ScoringConfig(
         weights=weights,
         structural_floor=scoring_raw.get("structural_floor", defaults.structural_floor),
+        closeability_min=scoring_raw.get("closeability_min", defaults.closeability_min),
     )
     _validate_scoring(scoring, path)
 
