@@ -16,7 +16,8 @@ class TestSourceQuality(unittest.TestCase):
         self.icp = ICPConfig(
             name="t", wedge="w", factor_rubrics={}, incumbents={}, scoring=ScoringConfig(),
             seed_file="x", vendor={"name": "v", "description": "d"},
-            source_quality={"existence_only_domains": ["facebook.com", "waze.com"]},
+            source_quality={"existence_only_domains": ["facebook.com", "waze.com"],
+                            "personal_profile_prefixes": ["linkedin.com/in/"]},
         )
         self.account = Account(
             name="A", segment="thrift_bank", sub_segment="", hq="", snapshot="",
@@ -29,7 +30,7 @@ class TestSourceQuality(unittest.TestCase):
             operational=OperationalScores(
                 winnability=_factor("https://facebook.com.evil.example/x"),
                 active_pain_timing=_factor("", confidence="inferred"),
-                reachability=_factor("https://ctb.com.ph/members/"),
+                reachability=_factor("https://www.linkedin.com/in/some-person-123/"),
             ),
             final_score=0, champion=Persona(role="r", why=""), economic_buyer=Persona(role="r", why=""),
             poc_angle="", profile="", registry=None,
@@ -37,11 +38,14 @@ class TestSourceQuality(unittest.TestCase):
 
     def test_matching_sourced_items_become_inferred_values_untouched(self):
         changed = apply_source_quality(self.account, self.icp)
-        self.assertEqual(changed, 2)  # facebook acuity, waze roi_quant
+        self.assertEqual(changed, 3)  # facebook acuity, waze roi_quant, personal profile reachability
         self.assertEqual(self.account.structural.acuity.evidence[0].confidence, "inferred")
         self.assertEqual(self.account.structural.roi_quant.evidence[0].confidence, "inferred")
         self.assertEqual(self.account.structural.whitespace.evidence[0].confidence, "sourced")
-        self.assertEqual(self.account.operational.reachability.evidence[0].confidence, "sourced")
+        # a personal profile page is never cited: inferred, URL dropped, claim kept
+        self.assertEqual(self.account.operational.reachability.evidence[0].confidence, "inferred")
+        self.assertEqual(self.account.operational.reachability.evidence[0].source_url, "")
+        self.assertEqual(self.account.operational.reachability.evidence[0].claim, "c")
         # a look-alike host is not a match; an already-inferred item is not counted
         self.assertEqual(self.account.operational.winnability.evidence[0].confidence, "sourced")
         self.assertEqual(self.account.structural.acuity.value, 0.5)

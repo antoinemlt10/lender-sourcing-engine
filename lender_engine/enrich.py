@@ -176,7 +176,9 @@ class PublicWebEnricher(Enricher):
                 "incumbents": json.dumps(icp.incumbents, indent=2),
             },
             web_search=True,
-            max_tokens=8192,
+            # Lenders with many brands or a long history produce long
+            # evidence lists; a truncated response is unparseable JSON.
+            max_tokens=16000,
             label=seed.name,
         )
         return parse_json_response(raw)

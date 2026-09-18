@@ -64,6 +64,21 @@ If a PDF resists the table parser, `sources --inspect` prints what
 pdfplumber reads; adjust the column mapping or a line regex in the
 manifest, or hand-build an extract in the normalized format.
 
+## The run in this repository
+
+The outputs committed here come from one run made on 17 and 18 September
+2026: 174 seeds in the enrichment pool, 142 enriched and scored, 32 not
+enriched. The run went through the pool in seed order (digital banks, thrift
+banks, then online lending platform operators alphabetically) and was
+stopped when the API credit balance ran out, so the 32 missing seeds are the
+alphabetical tail of the operators, from Scoreone Financing to Yulon
+Finance; they are listed in `data/not_enriched.csv` with their register ids.
+The ranking is therefore a ranking of 142 lenders, and the diagnostics
+describe those 142. Eleven of them score 0 because their closeability is
+below the eligibility threshold (mostly operators whose revocation or cease
+and desist order was later lifted, which the enrichment scored low); they
+are listed in the outputs, not dropped.
+
 ## Scoring
 
 Seven factors, each 0 to 1, each with a rationale and evidence items
@@ -140,7 +155,7 @@ python -m lender_engine diagnose            # distribution checks on outputs/ran
 python -m lender_engine brief "Name"        # one-page brief on one account (web search on)
 
 python scripts/check_personal_data.py       # e-mails, phone numbers, personal profile URLs in committed files
-python3 -m unittest discover tests          # 27 tests, no network
+python3 -m unittest discover tests          # 30 tests, no network
 ```
 
 `run --skip-enriched` resumes an interrupted run without re-spending on

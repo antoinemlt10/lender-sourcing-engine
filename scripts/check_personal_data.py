@@ -22,7 +22,10 @@ DEFAULT_PATHS = ["outputs", "data", "registries/extract", "README.md", "registri
 COMMITTED_SUFFIXES = {".md", ".csv", ".json"}
 # Organisation pages that happen to live under a personal-profile URL path.
 # Add an entry only after checking the page is an organisation, not a person.
-ALLOWLIST = {"https://www.linkedin.com/in/fintechallianceph/"}
+ALLOWLIST = {
+    "https://www.linkedin.com/in/fintechallianceph/",  # FinTech Alliance.PH, an association
+    "https://x.com/creditinfogovph/",  # Credit Information Corporation, a government body
+}
 
 PATTERNS = {
     "email": re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"),
@@ -38,7 +41,8 @@ def scan(path: Path) -> list[str]:
     text = path.read_text(encoding="utf-8", errors="ignore")
     for kind, pattern in PATTERNS.items():
         for m in pattern.finditer(text):
-            if m.group(0).rstrip("/") + "/" in ALLOWLIST:
+            url = m.group(0)
+            if any(url.startswith(a.rstrip("/")) for a in ALLOWLIST):
                 continue
             line = text.count("\n", 0, m.start()) + 1
             findings.append(f"{path}:{line}: {kind}: {m.group(0)[:80]}")

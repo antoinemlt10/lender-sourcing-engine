@@ -6,3 +6,4 @@ registries/raw/
 outputs/*.json
 !registries/raw/.gitkeep
 outputs/*.jsonl
+outputs/role_sentences_review.txt

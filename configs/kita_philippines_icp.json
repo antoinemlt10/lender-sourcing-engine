@@ -41,13 +41,16 @@
   },
   "seed_file": "../data/seed_lenders.json",
   "source_quality": {
-    "_readme": "Domains that confirm only that an entity exists and where it is: a map listing, a social page, a municipal business directory. An evidence item citing one of them as its source is reclassified from sourced to inferred by lender_engine.source_quality (applied after enrichment and on every re-rank), because such a page cannot support a claim about products, volume, vendors, timing or reach. Add a domain only after looking at what it publishes. ploan.ph and phbanks.com are loan and bank aggregators: they reproduce registry data and app-store text and are not a source for anything else.",
+    "_readme": "Domains that confirm only that an entity exists and where it is: a map listing, a social page, a municipal business directory. An evidence item citing one of them as its source is reclassified from sourced to inferred by lender_engine.source_quality (applied after enrichment and on every re-rank), because such a page cannot support a claim about products, volume, vendors, timing or reach. Add a domain only after looking at what it publishes. ploan.ph and phbanks.com are loan and bank aggregators: they reproduce registry data and app-store text and are not a source for anything else. personal_profile_prefixes lists URL prefixes of personal profile pages; an evidence item citing one is reclassified to inferred and its URL is dropped, because the repository carries no individual's identifiers.",
     "existence_only_domains": [
       "waze.com",
       "facebook.com",
       "balanga.com.ph",
       "ploan.ph",
       "phbanks.com"
+    ],
+    "personal_profile_prefixes": [
+      "linkedin.com/in/"
     ]
   }
 }
