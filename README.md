@@ -82,9 +82,11 @@ alphabetical tail of the operators, from Scoreone Financing to Yulon
 Finance; they are listed in `data/not_enriched.csv` with their register ids.
 The ranking is therefore a ranking of 142 lenders, and the diagnostics
 describe those 142. Eleven of them score 0 because their closeability is
-below the eligibility threshold (mostly operators whose revocation or cease
-and desist order was later lifted, which the enrichment scored low); they
-are listed in the outputs, not dropped.
+below the eligibility threshold: ten online lending platform operators
+whose lifted revocation or cease-and-desist order the enrichment scored
+low, and one thrift bank, Legazpi Savings Bank, because the BSP has
+approved its merger into another bank. They are listed in the outputs, not
+dropped.
 
 ## Scoring
 
@@ -188,12 +190,15 @@ Fact: the register rows (name, regulator, certificate number, list date) and
 every evidence item flagged sourced, each with its URL. The vendor
 description in the config quotes public sources dated in the file.
 
-Known defect of this run: eleven online lending platform operators sit at
-score 0 because the earlier wording of the closeability rubric read a lifted
-revocation or cease-and-desist order, noted on the current SEC register, as
-disqualifying. The rubric now says an order lowers closeability only while
-it is in force. Those eleven accounts were not re-enriched; doing so is
-about $4 of API spend that was not spent, and their rank would change.
+Known defect of this run: eleven accounts sit at score 0. Ten are online
+lending platform operators scored low because the earlier wording of the
+closeability rubric read a lifted revocation or cease-and-desist order,
+noted on the current SEC register, as disqualifying. The eleventh, Legazpi
+Savings Bank, is a thrift bank at 0 because the BSP has approved its merger
+into another bank, which is a real gate, not a wording defect. The rubric
+now says an order lowers closeability only while it is in force. The ten
+operators were not re-enriched; doing so is about $4 of API spend that was
+not spent, and their rank would change.
 
 Hypothesis: every rubric, the weights, the floor, the choice of which
 registers go into the enrichment pool, and the empty incumbents list. They
