@@ -31,6 +31,12 @@ page, an official app store listing, a recognised news outlet, or an
 association or investor page; never a mirror site, content farm, unrelated
 domain reproducing the lender's text, or loan-review aggregator as the only
 support for a fact. If that is all you find, say the fact is inferred and why.
+Every quotation and every claim labelled sourced must carry a URL that
+appears either in the account's stored evidence below or in this call's
+search results; otherwise drop the claim. Never cite contact-data
+aggregators (leadiq, zoominfo, rocketreach, apollo) or personal profile
+pages. Verbs must match the source: migrating is not selecting, considering
+is not deciding. No em dashes anywhere in the brief.
 
 Structure, in this order, each section short:
 

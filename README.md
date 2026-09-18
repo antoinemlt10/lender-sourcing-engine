@@ -11,6 +11,13 @@ Start here:
 
 - `outputs/ranked_accounts.md`: the ranked list, once a run has been made
 - `outputs/diagnostics.md`: what the ranking is worth, in numbers
+
+No brief is shipped. The `brief` command was run twice on the top-ranked
+account; both times the text carried claims labelled sourced without a URL
+that could be checked against the stored evidence or the call's own search
+results, and the second run ignored the prompt rule that every sourced
+claim must carry one. A brief that cannot be checked sentence by sentence
+is not shipped. The command stays; the prompt needs more work.
 - `configs/kita_philippines_icp.json`: the profile it was run against, every
   rubric marked as a hypothesis
 - `registries/manifest.json`: which public lists the pool came from, as of
@@ -180,6 +187,13 @@ back after the fact.
 Fact: the register rows (name, regulator, certificate number, list date) and
 every evidence item flagged sourced, each with its URL. The vendor
 description in the config quotes public sources dated in the file.
+
+Known defect of this run: eleven online lending platform operators sit at
+score 0 because the earlier wording of the closeability rubric read a lifted
+revocation or cease-and-desist order, noted on the current SEC register, as
+disqualifying. The rubric now says an order lowers closeability only while
+it is in force. Those eleven accounts were not re-enriched; doing so is
+about $4 of API spend that was not spent, and their rank would change.
 
 Hypothesis: every rubric, the weights, the floor, the choice of which
 registers go into the enrichment pool, and the empty incumbents list. They
